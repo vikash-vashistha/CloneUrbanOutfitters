@@ -1,195 +1,97 @@
-div,
-ul,
-li {
-  border: 1px dashed black;
-}
-
-/* #navbar {
-  height: 100px;
-  position: fixed;
-  top: 0;
-  margin: 0%;
-  width: 100%;
-} */
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-#title {
-  height: 40px;
-  display: flex;
-  justify-content: flex-end;
-  font-size: 13px;
-  background-color: rgb(245, 244, 244);
-}
-
-#title > div {
-  margin: 10px;
-}
-
-.nav-bar {
-  margin-top: 40px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 75px;
-  background-color: white;
-  padding: 10px 0;
-  box-sizing: border-box;
-  border-bottom: 1px solid #1a252f;
-}
-
-.nav-bar ul {
-  list-style: none;
-  width: 95%;
-  height: 100%;
-  margin: auto;
-  color: #fff;
-  /* text-transform: uppercase; */
-  /* font-weight: bold; */
-  /* letter-spacing: 2px; */
-  position: relative;
-}
-
-.nav-bar ul li {
-  width: 65px;
-  float: left;
-  margin-right: 10px;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 12px;
-  line-height: 17px;
-  font-family: Helvetica, Arial, sans-serif;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: all 0.7s ease;
-  color: black;
-}
-
-.nav-bar ul li:first-child {
-  width: 280px;
-  padding: auto 0%;
-  margin-left: 0px;
-  margin-right: 150px;
-  font-size: 16px;
-}
-
-.mega-menu > div:nth-child(1) {
-  width: 30%;
-  padding: auto 0%;
-  margin-left: 0px;
-  /* flex-wrap: wrap;
-  justify-content: space-between; */
-  /* margin-right: 200px; */
-  /* font-size: 16px; */
-}
-
-.nav-bar ul li:last-child {
-  width: 220px;
-  margin-right: 0;
-  margin-left: 80px;
-}
-
-.fa-search:before {
-  content: "\f002";
-  margin-left: -391%;
-  font-size: 16px;
-  color: gray;
-}
-
-.fa-shopping-bag:before {
-  content: "\f290";
-  font-size: 20px;
-  color: gray;
-}
-
-.nav-bar ul li:hover {
-  color: gray;
-}
-
-/* .nav-bar ul li:hover .mega-menu {
-  color: #707070;
-} */
-
-.nav-bar ul li .mega-menu p:hover {
-  color: gray;
-}
-
-.header-banner {
-  background: white;
-  width: 100%;
-  height: 320px;
-}
-
-.mega-menu {
-  position: absolute;
-  top: 65px;
-  left: 0;
-  width: 100%;
-  height: 350px;
-  /* background: #2c3e50; */
-  opacity: 0;
-  visibility: hidden;
-  /* transition: all 0.2s ease; */
-  box-sizing: border-box;
-  padding: 40px;
-  color: black;
-  font-size: 12px;
-}
-
-.nav-bar ul li:hover .mega-menu {
-  opacity: 1;
-  visibility: visible;
-}
-
-.inner-mega-menu {
-  border: 1px solid red;
-  width: 24%;
-  float: left;
-  /* margin-right: 1%; */
-}
-
-.inner-mega-menu > div {
-  display: flex;
-  justify-content: space-between;
-}
-
-.inner-mega-menu > div > div {
-  width: 50%;
-}
-.inner-mega-menu p {
-  padding: 5px 0;
-  transition: all 0.7s ease;
-}
-
-.inner-mega-menu:last-child {
-  width: 15%;
-  margin-right: 0%;
-}
-
-#search {
-  margin-top: -13px;
-  height: 40px;
-}
-
 #body {
-  height: 500px;
+  height: 2700px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  gap: 17px;
+  grid-template-areas:
+    "a a a a a a a a a a a a"
+    "b b b b b b b b c c c c"
+    "b b b b b b b b c c c c"
+    "b b b b b b b b c c c c"
+    "b b b b b b b b d d d d"
+    "e e e e f f f f d d d d"
+    "e e e e f f f f d d d d"
+    "e e e e f f f f d d d d"
+    "e e e e f f f f g g g g"
+    "h h h h h h h h g g g g"
+    "h h h h h h h h g g g g"
+    "h h h h h h h h g g g g"
+    "h h h h h h h h i i i i"
+    "h h h h h h h h i i i i"
+    "h h h h h h h h i i i i"
+    ". . . . . . . . i i i i";
+}
+
+#body > div {
+  /* border: 1px solid red; */
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  cursor: pointer;
+}
+
+#body > div:nth-child(1) {
+  margin-top: 100px;
+  grid-area: a;
+}
+
+#body > div:nth-child(2) {
+  grid-area: b;
+}
+
+#body > div:nth-child(3) {
+  grid-area: c;
+}
+
+#body > div:nth-child(4) {
+  grid-area: d;
+}
+
+#body > div:nth-child(5) {
+  grid-area: e;
+}
+
+#body > div:nth-child(6) {
+  grid-area: f;
+}
+
+#body > div:nth-child(7) {
+  grid-area: g;
+}
+
+#body > div:nth-child(8) {
+  grid-area: h;
+}
+
+#body > div:nth-child(9) {
+  grid-area: i;
+}
+
+#body > div > div:nth-child(1) {
+  height: 85%;
+}
+#body > div > div:nth-child(2) {
+  margin-top: 15px;
+  padding-top: 5px;
+  height: 10%;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 19px;
+  color: #222222;
+  font-weight: 400;
 }
 
 img {
-  width: 100%;
   height: 100%;
-}
-
-h1 {
-  margin: 0%;
-  padding: 0%;
+  width: 100%;
 }

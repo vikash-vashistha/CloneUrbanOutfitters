@@ -1,5 +1,19 @@
 function navbar() {
-  return `<nav class="nav-bar">
+  return `<div id="title">
+    <div>
+      <i class="fas fa-star-of-david"></i>
+      UO Rewards
+    </div>
+    <div>
+      <i class="fas fa-credit-card"></i>
+      Gift Cards
+    </div>
+    <div>
+      <i class="far fa-user-circle"></i>
+      Sign In
+    </div>
+  </div>
+  <nav class="nav-bar">
     <ul>
       <li>
         <h1>URBAN OUTFITTERS
