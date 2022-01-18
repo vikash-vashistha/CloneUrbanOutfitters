@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="Sign.css">
 </head>
 <body>
-    <div id="fmain">
+    <div id="fmain" style="display: flex;justify-content: space-between;">
         <button id="signb">sign</button>
+        <div id="myacc"></div>
     </div>
     <div id="popup">
         <div id="sin_pop_div">
@@ -31,17 +32,18 @@
     </div>
     <div id="pops">
         <div id="sup_pop_div">
-            <form action="sigup">
+            <form action="sigup" id="sigup">
                 <div id="clo_divs">+</div>
                 <p>Create an Account</p><br>
                 <p>Please enter your email address and password to create an<br> account.</p><br>
+                <p id="errf"></p>
                 <p>Email*</p><br>
-                <input type="email"><br>
+                <input id="signup_mail" type="email"><br>
                 <p>Password*</p>
-                <input type="text"  id=""><br>
+                <input type="text"  id="sineup_pass"><br>
                 <p>Show Password</p>
                 <p>style Preference</p>
-                <select name="" id="">
+                <select name="" id="Select_it">
                     <option value="noth">I'd rather not say</option>
                     <option value="men">Men's</option>
                     <option value="wom">Women's</option>   
@@ -52,10 +54,17 @@
                 </div>
                 <p>By creating an account, you agree to Urban Outfitters terms of use and privacy policy.
                 </p><br>
-                <button>Create an Account</button><br>
+                <button id="creacc">Create an Account</button><br>
                 <p>Already Have an Account?</p><br>
                 <button id="sign_b">Sign In</button>
             </form>
+        </div>
+    </div>
+    <div id="thirdp">
+        <div id="thirdps">
+            <p>Create an Account</p>
+            <p>You are now logged in to your new account</p>
+            <button id="sipok">ok</button>
         </div>
     </div>
 </body>
