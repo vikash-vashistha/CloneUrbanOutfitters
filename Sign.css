@@ -33,6 +33,7 @@
     background-color: white;
     opacity: 1;
     overflow: scroll;
+    overflow-x: hidden; 
 }
 #fmain{
     width: 100%;
