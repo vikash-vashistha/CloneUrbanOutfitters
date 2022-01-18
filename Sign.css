@@ -1,4 +1,4 @@
-#main_div{
+#popup{
     width: 100%;
     height: 100%;
     background-color:rgba(199, 176, 176, 0.7);
@@ -7,12 +7,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: none;
 }
-#pop_div{
+#sin_pop_div{
     width: 500px;
     height: 600px;
     background-color: white;
     opacity: 1;
 
+}
+#fmain{
+    width: 100%;
 }
