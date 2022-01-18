@@ -1,8 +1,41 @@
 
     let data = [
         {
+            img1:"https://images.urbndata.com/is/image/UrbanOutfitters/60112513_102_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
+            img2:"https://images.urbndata.com/is/image/UrbanOutfitters/60112513_102_d?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
+            name:"Out From Under Aria Seamed Flare Pant",
+            price:"55.00",
+            discount:"10% off",
+            size:"M",
+            color:"yello",
+            brand:"adidas",
+            category:"cloth",
+        },
+        {
+            img1:"https://images.urbndata.com/is/image/UrbanOutfitters/65317018_023_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
+            img2:"https://images.urbndata.com/is/image/UrbanOutfitters/65317018_023_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
+            name:"Out From Under Aria Seamed Flare Pant",
+            price:"$55.00",
+            discount:"10% off",
+            size:"M",
+            color:"yello",
+            brand:"adidas",
+            category:"cloth",
+        },
+        {
             img1:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_d?$xlarge$&fit=constrain&qlt=80&wid=100",
             img2:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_b?$xlarge$&fit=constrain&qlt=80&wid=100",
+            name:"Out From Under Aria Seamed Flare Pant",
+            price:"$55.00",
+            discount:"10% off",
+            size:"M",
+            color:"yello",
+            brand:"adidas",
+            category:"cloth",
+        },
+        {
+            img1:"https://images.urbndata.com/is/image/UrbanOutfitters/57989303_010_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
+            img2:"https://images.urbndata.com/is/image/UrbanOutfitters/57989303_010_d?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
             name:"Out From Under Aria Seamed Flare Pant",
             price:"$55.00",
             discount:"10% off",
@@ -50,48 +83,15 @@
             name:"Out From Under Aria Seamed Flare Pant",
             price:"$55.00",
             discount:"10% off",
-            size:"M",
-            color:"yello",
-            brand:"adidas",
-            category:"cloth",
-        },
-        {
-            img1:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_d?$xlarge$&fit=constrain&qlt=80&wid=100",
-            img2:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_b?$xlarge$&fit=constrain&qlt=80&wid=100",
-            name:"Out From Under Aria Seamed Flare Pant",
-            price:"$55.00",
-            discount:"10% off",
-            size:"M",
-            color:"yello",
-            brand:"adidas",
-            category:"cloth",
-        },
-        {
-            img1:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_d?$xlarge$&fit=constrain&qlt=80&wid=100",
-            img2:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_b?$xlarge$&fit=constrain&qlt=80&wid=100",
-            name:"Out From Under Aria Seamed Flare Pant",
-            price:"$55.00",
-            discount:"10% off",
-            size:"M",
-            color:"yello",
-            brand:"adidas",
-            category:"cloth",
-        },
-        {
-            img1:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_d?$xlarge$&fit=constrain&qlt=80&wid=100",
-            img2:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_b?$xlarge$&fit=constrain&qlt=80&wid=100",
-            name:"Out From Under Aria Seamed Flare Pant",
-            price:"$55.00",
-            discount:"10% off",
-            size:"M",
-            color:"yello",
+            size:"L",
+            color:"green",
             brand:"adidas",
             category:"cloth",
         },
     
         ]
     
-        function appenddata(){
+        function appenddata(data){
             data.map(function(ele,index){
     
                 let div = document.getElementById("product__img_name_price");
@@ -127,11 +127,12 @@
                 let price_discount = document.createElement("p");
     
                 let price = document.createElement("span");
-                price.innerText = ele.price;
+                price.innerText = `$${ele.price}   `;
     
                 let discount = document.createElement("span");
                 discount.innerText = ele.discount;
-                price_discount.append("price,discount");
+                discount.style.color = "cadetblue"
+                price_discount.append(price,discount);
     
                 let color = document.createElement("p");
                 color.innerHTML = `<i class="fas fa-circle" style="color:${ele.color}; font-size: 20px;"></i> <i class="fas fa-circle" style="color: green; font-size: 20px;"></i>`;
@@ -146,7 +147,7 @@
     
     /////////////////////changing img when mouse over and mouseout//////////////////////////
             let changeProduct_img1 = (ele,index,img)=>{
-                console.log("hello");
+                // console.log("hello");
                if(img.src==ele.img1){
                    img.src = ele.img2
                }
@@ -155,7 +156,7 @@
                }       
             }
             let changeProduct_img2 = (ele,index,img)=>{
-                console.log("hello");
+                // console.log("hello");
                 
                if(img.src==ele.img1){
                    img.src = ele.img2
@@ -169,5 +170,70 @@
     
     
         }
-        appenddata()
+        appenddata(data)
     
+
+        /////////////////////    filter functions are here ///////////////////////////////////
+
+        ///            by size filter
+
+document.getElementById("bysize_").addEventListener("change", ()=>{
+    let filter_items = data.filter(function(ele){
+        var val = document.getElementById("bysize_").value;
+        return ele.size ==val;
+    })
+    document.getElementById("product__img_name_price").innerHTML=null;
+    // console.log(filter_items);
+    appenddata(filter_items)
+})
+
+       /////         by color filter
+
+       document.getElementById("bycolor_").addEventListener("change", ()=>{
+        let filter_items = data.filter(function(ele){
+            var val = document.getElementById("bycolor_").value;
+            return ele.color ==val;
+        })
+        document.getElementById("product__img_name_price").innerHTML=null;
+        // console.log(filter_items);
+        appenddata(filter_items)
+    })
+
+    /////    by brand filter
+
+    document.getElementById("bybrand_").addEventListener("change", ()=>{
+        let filter_items = data.filter(function(ele){
+            var val = document.getElementById("bycolor_").value;
+            return ele.brand ==val;
+        })
+        document.getElementById("product__img_name_price").innerHTML=null;
+        // console.log(filter_items);
+        appenddata(filter_items)
+    })
+
+    ///////    by price filter 
+
+    // document.querySelector(".b200").addEventListener("click", filtby200);
+    // function filtby200(){
+    //     var filtbyprice = productData.filter(function(ele){
+    //         return Number(ele.price)<= 100;
+    //     }); 
+    //       console.log(filtbyprice)
+    //       display(filtbyprice)
+    // }
+
+    document.getElementById("byprice_").addEventListener("change", ()=>{
+        let filter_items = data.filter(function(ele){
+            let val = document.getElementById("byprice_").value;
+            return  Number(ele.price)>=val;
+        })
+        document.getElementById("product__img_name_price").innerHTML=null;
+        // console.log(filter_items);
+        appenddata(filter_items)
+    })
+
+    ///// ther is no function for free pickup ////
+
+    //////////////////////////////////   sort function here            /////////////////////////////////
+
+

@@ -1,3 +1,6 @@
+  body{
+    font-family: 'Quicksand', sans-serif;
+  }
   /* products top categories */
   #all_product_data{
     margin: auto;
@@ -54,14 +57,21 @@
 /* #browse_by */
 
 #browse_by{
+    
     display: grid;
     padding-right: 20%;
 }
-
-li{
+#browse_by_heading>li{
+    font-size: 15px;
+    line-height: 35px;
     list-style-type: none;
-    line-height: 30px;
 }
+#browse_by_heading>select>option{
+    font-size: 20px;
+    color: gray;
+}
+
+
 
 /* product_count_sort section css */
 #products_count_sort{
