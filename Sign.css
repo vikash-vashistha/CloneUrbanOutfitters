@@ -14,6 +14,7 @@
     height: 600px;
     background-color: white;
     opacity: 1;
+    border-radius: 6px;
 
 }
 #pops{
@@ -34,7 +35,26 @@
     opacity: 1;
     overflow: scroll;
     overflow-x: hidden; 
+    border-radius: 6px;
 }
 #fmain{
     width: 100%;
+}
+#clo_divf{
+    width: 50px;
+    margin-top: 15px;
+    margin-left: 470px;
+    transform: rotate(45deg);
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+#clo_divs{
+    width: 50px;
+    margin-top: 15px;
+    margin-left: 450px;
+    transform: rotate(45deg);
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
 }
