@@ -74,8 +74,8 @@ margin: 0 auto;
     align-items: center;
     display: none;
 }
-#thirdps>{
-    width: 700px;
+#thirdps{
+    width: 500px;
     height: 250px;
     background-color: white;
     opacity: 1;
