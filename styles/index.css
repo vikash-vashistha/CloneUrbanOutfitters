@@ -108,6 +108,8 @@ hr {
 }
 
 #add {
+  margin: auto;
+  width: 90%;
   display: grid;
   gap: 17px;
   grid-template-areas:
@@ -153,7 +155,7 @@ hr {
   font-weight: 400;
 }
 
-#add p {
+p {
   margin-top: 10px;
   font-size: 12px;
   line-height: 19px;
