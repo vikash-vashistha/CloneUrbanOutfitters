@@ -174,6 +174,7 @@
                 d1.addEventListener("click",()=>{
                     // console.log("go to cart")
                     strore_to_local(ele)
+                    location.reload()
 
                     // window.location.href = "./"                                                        //change the location and show the all details of that product
 
