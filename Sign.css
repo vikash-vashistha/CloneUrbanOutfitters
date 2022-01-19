@@ -15,6 +15,13 @@
     background-color: white;
     opacity: 1;
     border-radius: 6px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+#sin_pop_div>#sigin>div{
+  width: 80%;
+margin: 0 auto;
 
 }
 #pops{
@@ -36,26 +43,25 @@
     overflow: scroll;
     overflow-x: hidden; 
     border-radius: 6px;
+    text-align: center;
+}
+#sup_pop_div>#sigup>div{
+   width: 80%;
+   margin: 0 auto;
+   border: solid green;
 }
 #fmain{
     width: 100%;
 }
 #clo_divf{
-    width: 50px;
-    margin-top: 15px;
-    margin-left: 470px;
     transform: rotate(45deg);
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 60px;
     cursor: pointer;
+    font-weight: lighter;
+
 }
 #clo_divs{
-    width: 50px;
-    margin-top: 15px;
-    margin-left: 450px;
     transform: rotate(45deg);
-    font-weight: bold;
-    font-size: 30px;
     cursor: pointer;
 }
 #thirdp{

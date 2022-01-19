@@ -54,6 +54,8 @@ if(c>0){
     }
     mainarr.push(datas);
     localStorage.setItem("mainsignup",JSON.stringify(mainarr))
+    document.getElementById("popup").style.display="none"
+    document.getElementById("pops").style.display="none"
     document.getElementById("thirdp").style.display="flex"
 }
           }
@@ -81,6 +83,7 @@ if(c>0){
                 for(var j=0;j<checkarr.length;j++){
                     if(checkarr[j].mails==emailee&&checkarr[j].passc==pasee){
                         d++
+
                         document.getElementById("myacc").textContent="My Account"
                         localStorage.setItem("checkiacc",JSON.stringify(d))
                     }
@@ -88,8 +91,6 @@ if(c>0){
                 if(d>0){
                     document.getElementById("popup").style.display="none"
                     document.getElementById("pops").style.display="none"
-                    document.getElementById("sigin").reset();
-                    document.getElementById("sigup").reset();
                 }else{
                     alert("enter valid credentials")
                 }
