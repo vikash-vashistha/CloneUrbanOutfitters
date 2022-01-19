@@ -30,6 +30,12 @@ event.preventDefault()
 document.getElementById("popup").style.display="none"
 document.getElementById("pops").style.display="flex"
 document.getElementById("inform").textContent=""
+document.getElementById("hide_pf").style.display="none"
+document.getElementById("show_pf").style.display="flex"
+ document.getElementById("sign_p").type="password";
+ document.getElementById("hide_ps").style.display="none"
+            document.getElementById("show_ps").style.display="flex"
+            document.getElementById("sineup_pass").type="password";
 document.getElementById("sigin").reset()
 document.getElementById("sigup").reset()
 })
@@ -38,6 +44,12 @@ document.getElementById("sign_b").addEventListener("click",function(event){
     document.getElementById("popup").style.display="flex"
     document.getElementById("pops").style.display="none"
     document.getElementById("errf").textContent=""
+    document.getElementById("hide_pf").style.display="none"
+    document.getElementById("show_pf").style.display="flex"
+    document.getElementById("sign_p").type="password";
+    document.getElementById("hide_ps").style.display="none"
+            document.getElementById("show_ps").style.display="flex"
+            document.getElementById("sineup_pass").type="password";
     document.getElementById("sigin").reset()
     document.getElementById("sigup").reset()
     })
@@ -47,6 +59,12 @@ document.getElementById("clo_divf").addEventListener("click",function(event){
         document.getElementById("errf").textContent=""
         document.getElementById("inform").textContent=""
         document.getElementById("inform").textContent=""
+        document.getElementById("hide_pf").style.display="none"
+        document.getElementById("show_pf").style.display="flex"
+        document.getElementById("sign_p").type="password";
+        document.getElementById("hide_ps").style.display="none"
+            document.getElementById("show_ps").style.display="flex"
+            document.getElementById("sineup_pass").type="password";
         document.getElementById("sigin").reset()
         document.getElementById("sigup").reset()
         })
@@ -54,9 +72,39 @@ document.getElementById("clo_divs").addEventListener("click",function(event){
         event.preventDefault()
         document.getElementById("pops").style.display="none"
         document.getElementById("errf").textContent=""
+        document.getElementById("hide_pf").style.display="none"
+        document.getElementById("show_pf").style.display="flex"
+        document.getElementById("sign_p").type="password";
+        document.getElementById("hide_ps").style.display="none"
+            document.getElementById("show_ps").style.display="flex"
+            document.getElementById("sineup_pass").type="password";
         document.getElementById("sigin").reset()
         document.getElementById("sigup").reset()
         })
+        document.getElementById("show_pf").addEventListener("click",function(){
+            document.getElementById("show_pf").style.display="none"
+            document.getElementById("hide_pf").style.display="flex"
+            document.getElementById("sign_p").type="text";
+        })
+        document.getElementById("hide_pf").addEventListener("click",function(){
+            document.getElementById("hide_pf").style.display="none"
+            document.getElementById("show_pf").style.display="flex"
+            document.getElementById("sign_p").type="password";
+            
+        })
+        document.getElementById("show_ps").addEventListener("click",function(){
+            document.getElementById("show_ps").style.display="none"
+            document.getElementById("hide_ps").style.display="flex"
+            document.getElementById("sineup_pass").type="text";
+        })
+        document.getElementById("hide_ps").addEventListener("click",function(){
+            document.getElementById("hide_ps").style.display="none"
+            document.getElementById("show_ps").style.display="flex"
+            document.getElementById("sineup_pass").type="password";
+            
+        })
+
+
         var mainarr=JSON.parse(localStorage.getItem("mainsignup"))||[];
         var  c=0;
         document.getElementById("creacc").addEventListener("click",function(event){
@@ -88,6 +136,12 @@ if(c>0){
     document.getElementById("popup").style.display="none"
     document.getElementById("pops").style.display="none"
     document.getElementById("thirdp").style.display="flex"
+    document.getElementById("hide_pf").style.display="none"
+    document.getElementById("show_pf").style.display="flex"
+    document.getElementById("sign_p").type="password";
+    document.getElementById("hide_ps").style.display="none"
+            document.getElementById("show_ps").style.display="flex"
+            document.getElementById("sineup_pass").type="password";
     document.getElementById("sigin").reset()
     document.getElementById("sigup").reset()
 }
@@ -125,6 +179,12 @@ check_user()
                 if(d>0){
                     document.getElementById("popup").style.display="none"
                     document.getElementById("pops").style.display="none"
+                    document.getElementById("hide_pf").style.display="none"
+                    document.getElementById("show_pf").style.display="flex"
+                    document.getElementById("sign_p").type="password";
+                    document.getElementById("hide_ps").style.display="none"
+            document.getElementById("show_ps").style.display="flex"
+            document.getElementById("sineup_pass").type="password";
                     document.getElementById("sigin").reset()
                     document.getElementById("sigup").reset()
                     d=0
