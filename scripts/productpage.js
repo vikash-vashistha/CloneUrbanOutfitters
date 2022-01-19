@@ -269,11 +269,15 @@
                  brand,
             }
 
+            // console.log(img1,img2,name,price,discount,size,color,brand);
+
             arr_local.push(item_obj);
+            // console.log(arr_local.length);
 
             localStorage.setItem("cart",JSON.stringify(arr_local));
 
         }
+
     
 
         /////////////////////    filter functions are here ///////////////////////////////////

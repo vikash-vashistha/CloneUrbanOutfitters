@@ -157,14 +157,14 @@
 </body>
 </html>
 <script type="module">
-     let cart = 4;
-  localStorage.setItem("cart", JSON.stringify("cart"))
+    
   import navbar from './components/navbar.js'
   import footer from './components/footer.js'
   let nav = document.getElementById("navbar");
 
   nav.innerHTML = navbar()
-  cart = JSON.parse(localStorage.getItem("cart"))
+
+ let cart = JSON.parse(localStorage.getItem("cart"))
   document.querySelector(".fa-shopping-bag").innerHTML = cart.length;
 
   let foot = document.getElementById("footer");
