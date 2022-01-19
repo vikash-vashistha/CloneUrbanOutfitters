@@ -25,7 +25,7 @@ function navbar() {
             <h3>Shop by Category</h3>
             <div>
               <div>
-                <p>Shop All Women's</p>
+                <p id="ws1">Shop All Women's</p>
                 <p>New</p>
                 <p>Dresses</p>
                 <p>Rompers + Jumpsuits</p>

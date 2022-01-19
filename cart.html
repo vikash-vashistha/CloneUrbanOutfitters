@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/cart.css">
+  <link rel="stylesheet" href="./styles/slider.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://kit.fontawesome.com/05dfa6a87b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="navbar"></div>
+  <div id="main">
+    <div>
+
+    </div>
+  </div>
+  <div id="slider">
+    <h3>For You</h3>
+    <hr>
+    <div class="carousel" data-flickity='{ "groupCells": 5 }'>
+      <div class="carousel-cell">
+        <div class="img">
+          <img src="https://images.urbndata.com/is/image/UrbanOutfitters/31722010_011_d?$medium$&qlt=80&fit=constrain"
+            alt="">
+          <p>Anastasia Beverly Hills Brow Powder Duo
+          </p>
+        </div>
+
+      </div>
+      <div class="carousel-cell">
+        <div class="img">
+          <img src="https://images.urbndata.com/is/image/UrbanOutfitters/48195911_020_d?$medium$&qlt=80&fit=constrain"
+            alt="">
+          <p>Bamboo Woven Pendant Light Shade</p>
+        </div>
+
+      </div>
+      <div class="carousel-cell">
+        <div class="img">
+          <img src="https://images.urbndata.com/is/image/UrbanOutfitters/63049985_080_d?$medium$&qlt=80&fit=constrain"
+            alt="">
+          <p>Beatrix Brushed Bed Blanket</p>
+        </div>
+
+      </div>
+      <div class="carousel-cell">
+        <div class="img">
+          <img src="https://images.urbndata.com/is/image/UrbanOutfitters/59096487_040_d?$medium$&qlt=80&fit=constrain"
+            alt="">
+          <p>Alex Modern Blocks Framed Art Print</p>
+        </div>
+
+      </div>
+      <div class="carousel-cell">
+        <div class="img">
+          <img src="https://images.urbndata.com/is/image/UrbanOutfitters/59845693_000_d?$medium$&qlt=80&fit=constrain"
+            alt="">
+          <p>BALLS™ Trimmer</p>
+        </div>
+
+      </div>
+      <div class="carousel-cell">
+        <div class="img">
+          <img src="https://images.urbndata.com/is/image/UrbanOutfitters/46261871_070_d?$medium$&qlt=80&fit=constrain"
+            alt="">
+          <p>Celestial Sun Light Sculpture</p>
+        </div>
+
+      </div>
+      <div class="carousel-cell">
+        <div class="img">
+          <img src="https://images.urbndata.com/is/image/UrbanOutfitters/64108277_009_d?$medium$&qlt=80&fit=constrain"
+            alt="">
+          <p>C7skates UO Exclusive Checkerboard Premium Quad Roller Skate</p>
+        </div>
+
+      </div>
+      <div class="carousel-cell">
+        <div class="img">
+          <img src="https://images.urbndata.com/is/image/UrbanOutfitters/49266935_072_d?$medium$&qlt=80&fit=constrain"
+            alt="">
+          <p>Coors Golden Colorado Tee</p>
+        </div>
+
+      </div>
+      <div class="carousel-cell">
+        <div class="img">
+          <img src="https://images.urbndata.com/is/image/UrbanOutfitters/66211160_010_d?$medium$&qlt=80&fit=constrain"
+            alt="">
+          <p>BDG Corduroy Dipped-Waistband Pant</p>
+        </div>
+
+      </div>
+      <div class="carousel-cell">
+        <div class="img">
+          <img src="https://images.urbndata.com/is/image/UrbanOutfitters/66947144_007_d?$medium$&qlt=80&fit=constrain"
+            alt="">
+          <p>Hannah Snake Ring Set</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+</html>
+<script type="module">
+
+  import navbar from './components/navbar.js'
+  import footer from './components/footer.js'
+  let nav = document.getElementById("navbar");
+
+  nav.innerHTML = navbar()
+
+  let cart = JSON.parse(localStorage.getItem("cart"))
+  document.querySelector(".fa-shopping-bag").innerHTML = cart.length;
+
+  let foot = document.getElementById("footer");
+  foot.innerHTML = footer()
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="./scripts/cart.js"></script>

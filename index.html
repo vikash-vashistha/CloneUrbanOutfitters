@@ -398,7 +398,7 @@
           <p>E-Gift Card</p>
         </div>
 
-      </div>
+      </div> >
 
     </div>
   </div>
@@ -436,7 +436,7 @@
   let nav = document.getElementById("nav");
 
   nav.innerHTML = navbar()
-  cart = JSON.parse(localStorage.getItem("cart"))
+  let cart = JSON.parse(localStorage.getItem("cart"))
   document.querySelector(".fa-shopping-bag").innerHTML = cart.length;
 
   let foot = document.getElementById("footer");
@@ -472,6 +472,13 @@
   //     document.querySelector(".carousel").append(div)
   //   })
   // }
+  let ws1 = document.querySelector("#ws1");
+  console.log(ws1);
+  ws1.addEventListener("click", function () {
+    window.location.href = "productpage.html"
+  })
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+</script>
