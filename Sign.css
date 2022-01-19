@@ -16,8 +16,6 @@
     opacity: 1;
     border-radius: 6px;
     text-align: center;
-    font-family: Helvetica, Arial, sans-serif;
-
 }
 #sin_pop_div>#sigin>div{
   width: 80%;
@@ -55,14 +53,16 @@ margin: 0 auto;
 }
 #clo_divf{
     transform: rotate(45deg);
-    font-size: 60px;
     cursor: pointer;
     font-weight: lighter;
+    font-size: 60px;
 
 }
 #clo_divs{
     transform: rotate(45deg);
     cursor: pointer;
+    font-weight: lighter;
+    font-size: 55px;
 }
 #thirdp{
     width: 100%;
