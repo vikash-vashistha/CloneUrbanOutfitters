@@ -72,7 +72,7 @@
             discount:"2% off",
             size:"M",
             color:"white",
-            brand:"adidas",
+            brand:"adorn",
         },
         {
             img1:"https://images.urbndata.com/is/image/UrbanOutfitters/63000095_020_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=360",
@@ -82,7 +82,7 @@
             discount:"2% off",
             size:"M",
             color:"rgb(211,85,0)",
-            brand:"adidas",
+            brand:"adorn",
         },
         {
             img1:"https://images.urbndata.com/is/image/UrbanOutfitters/66165705_034_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=360",
@@ -93,7 +93,7 @@
             size:"M",
             color:"rgb(194,216,147)",
             color:"green",
-            brand:"adidas",
+            brand:"adorn",
         },
         {
             img1:"https://images.urbndata.com/is/image/UrbanOutfitters/66165010_001_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=360",
@@ -104,7 +104,7 @@
             size:"M",
             color:"rgb(194,216,147)",
             color:"black",
-            brand:"adidas",
+            brand:"adorn",
         },
         {
             img1:"https://images.urbndata.com/is/image/UrbanOutfitters/63696751_060_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=360",
@@ -309,7 +309,7 @@ document.getElementById("bysize_").addEventListener("change", ()=>{
 
     document.getElementById("bybrand_").addEventListener("change", ()=>{
         let filter_items = data.filter(function(ele){
-            var val = document.getElementById("bycolor_").value;
+            var val = document.getElementById("bybrand_").value;
             return ele.brand ==val;
         })
         document.getElementById("product__img_name_price").innerHTML=null;
