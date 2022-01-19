@@ -26,7 +26,7 @@
 #body > div {
   /* border: 1px solid red; */
   font-family: sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
   cursor: pointer;
 }
 
@@ -160,4 +160,45 @@ hr {
   color: #222222;
   font-weight: 400;
   text-decoration: underline;
+}
+
+#oudivcontainer {
+  width: 90%;
+
+  margin: auto;
+}
+#oudiv1 {
+  margin: auto;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+#oudiv1 > a > img {
+  width: 340px;
+  height: 50px;
+}
+#oudiv2 {
+  margin: auto;
+  height: 160px;
+}
+#oudiv2p1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.836);
+}
+#oudiv2p2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 2px;
+  line-height: 1.5;
+  color: gray;
+}
+#oudiv2p2 + a {
+  color: gray;
+  font-family: Helvetica, Arial, sans-serif;
+}
+#oudivcontainerhr {
+  color: rgb(245, 245, 234);
 }

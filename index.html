@@ -431,16 +431,42 @@
     </div>
   </div>
   </div>
+  <div id="oudivcontainer">
+    <div id="oudiv1">
+      <a href="#"><img
+          src="https://images.ctfassets.net/q602vtcuu3w3/cfOtVqgwfuSCgKuGm8OeG/78126dc719794b8068438308638f33f6/GiftCards_DT.jpg?w=633&q=80&fm=webp"
+          alt=""></a>
+      <a href="#"><img
+          src="https://images.ctfassets.net/q602vtcuu3w3/2zEOxZhCGZtypQ8q6VsdJJ/69887fb270b8812131bc47f2b713af62/AppPage_DT.jpg?w=844&q=80&fm=webp"
+          alt=""></a>
+      <a href="#"><img
+          src="https://images.ctfassets.net/q602vtcuu3w3/3BxrMB7cQ8i6QAIascsIaE/4284d1213a7a077846301b18544795ee/service_message_afterpay.jpg?w=639&q=80&fm=webp"
+          alt=""></a>
+    </div>
+    <hr id="oudivcontainerhr">
+    <div id="oudiv2">
+      <p id="oudiv2p1">About UO</p>
+      <P id="oudiv2p2">Urban Outfitters is a lifestyle retailer dedicated to inspiring customers through a unique
+        combination of product, creativity and cultural understanding. Founded in 1970 in a small space across the
+        street
+        from the University of Pennsylvania, Urban Outfitters now operates over 2...</P>
+      <a href="#">See More</a>
+    </div>
+  </div>
   <div id="footer"></div>
 </body>
 
 </html>
 <script type="module">
+  let cart = 4;
+  localStorage.setItem("cart", JSON.stringify("cart"))
   import navbar from './components/navbar.js'
   import footer from './components/footer.js'
   let nav = document.getElementById("nav");
 
   nav.innerHTML = navbar()
+  cart = JSON.parse(localStorage.getItem("cart"))
+  document.querySelector(".fa-shopping-bag").innerHTML = cart.length;
 
   let foot = document.getElementById("footer");
   foot.innerHTML = footer()
