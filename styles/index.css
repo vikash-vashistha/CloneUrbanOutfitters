@@ -1,5 +1,5 @@
 #body {
-  height: 2700px;
+  height: 3000px;
   width: 90%;
   margin: auto;
   display: grid;
@@ -76,14 +76,14 @@
   height: 10%;
 }
 
-h3 {
+#body h3 {
   font-size: 16px;
   line-height: 22px;
   color: #222222;
   font-weight: 400;
 }
 
-p {
+#body p {
   margin-top: 10px;
   font-size: 12px;
   line-height: 19px;
@@ -103,6 +103,61 @@ hr {
   background-color: whitesmoke;
 }
 
-#footer {
-  height: 100px;
+#slider {
+  margin-top: 100px;
+}
+
+#add {
+  display: grid;
+  gap: 17px;
+  grid-template-areas:
+    "w w w w w w w w w w w w"
+    "x x x x y y y y z z z z"
+    "x x x x y y y y z z z z"
+    "x x x x y y y y z z z z"
+    "x x x x y y y y z z z z"
+    "x x x x y y y y z z z z";
+}
+
+#add > div:nth-child(1) {
+  margin-top: 100px;
+  grid-area: w;
+}
+
+#add > div:nth-child(2) {
+  grid-area: x;
+}
+
+#add > div:nth-child(3) {
+  grid-area: y;
+}
+
+#add > div:nth-child(4) {
+  grid-area: z;
+}
+
+#add img {
+  width: 100%;
+  height: 80%;
+}
+
+#add > div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+
+#add h1 {
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+  font-weight: 400;
+}
+
+#add p {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 19px;
+  color: #222222;
+  font-weight: 400;
+  text-decoration: underline;
 }

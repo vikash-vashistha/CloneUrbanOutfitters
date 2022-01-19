@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "name": "Sebago DanLug Loafer",
+      "url1": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_b?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "url2": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_d?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "rgb": "#000000"
+    },
+    {
+      "name": "Sebago DanLug Loafer",
+      "url1": "https://images.urbndata.com/is/image/UrbanOutfitters/64460967_029_d?$medium$&qlt=80&fit=constrain",
+      "url2": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_d?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "rgb": "#000000"
+    },
+    {
+      "name": "Sebago DanLug Loafer",
+      "url1": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_b?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "url2": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_d?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "rgb": "#000000"
+    },
+    {
+      "name": "Sebago DanLug Loafer",
+      "url1": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_b?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "url2": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_d?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "rgb": "#000000"
+    },
+    {
+      "name": "Sebago DanLug Loafer",
+      "url1": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_b?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "url2": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_d?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "rgb": "#000000"
+    },
+    {
+      "name": "Sebago DanLug Loafer",
+      "url1": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_b?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "url2": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_d?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "rgb": "#000000"
+    },
+    {
+      "name": "Sebago DanLug Loafer",
+      "url1": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_b?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "url2": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_d?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "rgb": "#000000"
+    },
+    {
+      "name": "Sebago DanLug Loafer",
+      "url1": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_b?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "url2": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_d?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "rgb": "#000000"
+    },
+    {
+      "name": "Sebago DanLug Loafer",
+      "url1": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_b?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "url2": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_d?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "rgb": "#000000"
+    },
+    {
+      "name": "Sebago DanLug Loafer",
+      "url1": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_b?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "url2": "https://images.urbndata.com/is/image/UrbanOutfitters/57285827_001_d?$xlarge$&fit=constrain&qlt=80&wid=100",
+      "rgb": "#000000"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "product": "pablu"
+    }
+  ]
+}
