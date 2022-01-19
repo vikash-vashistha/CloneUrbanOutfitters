@@ -135,7 +135,7 @@
                 price_discount.append(price,discount);
     
                 let color = document.createElement("p");
-                color.innerHTML = `<i class="fas fa-circle" style="color:${ele.color}; font-size: 20px;"></i> <i class="fas fa-circle" style="color: green; font-size: 20px;"></i>`;
+                color.innerHTML = `<i class="fas fa-circle" style="color:${ele.color}; font-size: 20px;"></i> `;
     
                 details_div.append(name,price_discount,color)
     
