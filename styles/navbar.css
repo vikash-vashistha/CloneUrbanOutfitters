@@ -78,6 +78,7 @@ body {
 
 .nav-bar ul li:first-child {
   width: 280px;
+  /* height: 20px; */
   padding: auto 0%;
   margin-left: 0px;
   margin-right: 150px;
@@ -182,12 +183,12 @@ body {
   height: 40px;
 }
 
-img {
+.nav-bar > img {
   width: 100%;
   height: 100%;
 }
 
-h1 {
+.nav-bar > h1 {
   margin: 0%;
   padding: 0%;
 }

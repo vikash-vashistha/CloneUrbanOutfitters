@@ -95,3 +95,14 @@ img {
   height: 100%;
   width: 100%;
 }
+
+hr {
+  margin: auto;
+  width: 1140px;
+  height: 0.5px;
+  background-color: whitesmoke;
+}
+
+#footer {
+  height: 100px;
+}

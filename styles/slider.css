@@ -1,0 +1,15 @@
+.carousel {
+  margin: auto;
+  border: 1px solid green;
+  width: 90%;
+}
+
+.carousel-cell {
+  margin-left: 15px;
+  padding-top: 5px;
+  width: 20%;
+}
+
+.carousel-cell > img {
+  height: 90%;
+}
