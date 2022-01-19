@@ -9,8 +9,13 @@
 </head>
 <body>
     <div id="fmain" style="display: flex;justify-content: space-between;">
-        <button id="signb">sign</button>
-        <div id="myacc"></div>
+        <div id="signindiv">
+            <button id="signb">Sign In</button>
+        </div>
+        <div id="myaccdiv">
+            <div id="myacc">My Account</div>
+        </div>
+        
     </div>
     <div id="popup">
         <div id="sin_pop_div">
@@ -24,6 +29,7 @@
                     <h id="sign_t" style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;font-weight:400;">Sign In</h>
                 </div>
                 <div><hr style="width: 102%;"></div>
+                <div id="inform" style="font-size: 12px;color: red;font-family: Helvetica, Arial, sans-serif"></div>
                 <div style="display: flex;justify-content: flex-start;">
                     <p style="font-size: 12px;font-weight: bold;font-family: Helvetica, Arial, sans-serif;">Email*</p>
                 </div>
@@ -61,7 +67,7 @@
     </div>
     <div id="pops">
         <div id="sup_pop_div">
-            <form action="sigup" id="sigup">
+            <form action="" id="sigup">
                 <div style="display: flex;justify-content: flex-end;">
                     <div  id="clo_divs">+</div>
                 </div>
@@ -75,7 +81,7 @@
                     <p style="font-size: 12px;color: grey;font-family: Helvetica, Arial, sans-serif;margin-top: 0px;">Please enter your email address and password to create an<br> account.</p>
                 </div>
                 <div>
-                    <p style="font-family: Helvetica, Arial, sans-serif;" id="errf"></p>
+                    <p style="font-family: Helvetica, Arial, sans-serif;color: red;font-size: 12px;" id="errf"></p>
                 </div>
                 <div style="display: flex;justify-content: flex-start;height: 20px;">
                     <p style="font-size: 12px;font-weight: bold;font-family: Helvetica, Arial, sans-serif;margin-top: 0px;">Email*</p>
@@ -112,12 +118,12 @@
                 </div>
                 <div>
                     <div style="display: flex; justify-content: flex-start;text-align: left;" >
-                        <input style="margin-top: 12px;" type="checkbox" name="" id="cond">
+                        <input style="margin-top: 12px;background-color: grey;color: honeydew;" type="checkbox" name="" id="cond">
                         <p style="font-size: 12px;color: grey;font-family: Helvetica, Arial, sans-serif">Sign up for email to receive rewards, exclusive discounts, early access to sale, VIP status and much more!</p>
                     </div>
                 </div>
                    
-                <div>
+                <div style="text-align: left">
                     <p style="font-size: 12px;color: grey;font-family: Helvetica, Arial, sans-serif">By creating an account, you agree to Urban Outfitters terms of use and privacy policy.
                     </p>
                 </div>
