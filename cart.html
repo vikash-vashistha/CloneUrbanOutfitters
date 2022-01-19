@@ -16,11 +16,7 @@
 
 <body>
   <div id="navbar"></div>
-  <div id="main">
-    <div>
-
-    </div>
-  </div>
+  <div id="main"></div>
   <div id="slider">
     <h3>For You</h3>
     <hr>
@@ -129,4 +125,34 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="./scripts/cart.js"></script>
+<script>
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  console.log(cart);
+  let main = document.getElementById("main");
+  function display() {
+    cart.map(function (elem, index) {
+      console.log(elem);
+      let div = document.createElement("div");
+      div.innerHTML = ` <img
+        src=${elem.img1}
+        alt="">
+      <div>
+        <p id="name">${elem.name}</p>
+        <p id="size">${elem.size}</p>
+        <p id="name">${elem.brand}</p>
+        <p id="size">${elem.color}</p>
+      </div>
+      <p id="price">$${elem.price}</p>
+      <select name="" id="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <p id="total">$${elem.price}</p>`
+      main.append(div)
+    })
+  }
+  display()
+</script>

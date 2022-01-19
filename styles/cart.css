@@ -1,7 +1,43 @@
 div {
   border: 1px solid red;
+  font-family: sans-serif;
 }
 
 #main {
-  height: 1000px;
+  margin: auto;
+  width: 90%;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+#main > div {
+  margin-top: 20px;
+  display: flex;
+  height: 130px;
+  width: 70%;
+}
+
+#main img {
+  height: 100%;
+  width: 40%;
+}
+
+#main > div > div {
+  margin-left: 10px;
+  height: 100%;
+  width: 40%;
+  text-align: center;
+}
+
+#main > div > p {
+  margin-top: 50px;
+  margin-left: 40px;
+  height: 90%;
+  width: 40%;
+}
+
+#main > div > select {
+  margin-top: 50px;
+  height: 15%;
+  width: 10%;
 }
