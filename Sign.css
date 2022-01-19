@@ -46,7 +46,6 @@ margin: 0 auto;
 #sup_pop_div>#sigup>div{
    width: 80%;
    margin: 0 auto;
-   border: solid green;
 }
 #fmain{
     width: 100%;
@@ -75,11 +74,17 @@ margin: 0 auto;
     align-items: center;
     display: none;
 }
-#thirdps{
-    width: 400px;
+#thirdps>{
+    width: 700px;
     height: 250px;
     background-color: white;
     opacity: 1;
     border-radius: 6px;
+  
+    
+}
+#thirdps>div{
+    width: 80%;
+    margin: 0 auto;
     
 }
