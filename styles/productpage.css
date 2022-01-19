@@ -96,6 +96,17 @@
         justify-content: end;
  }
 
+ #by_sort_{
+     font-size: 20px;
+     padding: 5px;
+     border: 1px solid gray;
+     border-radius: 5px;
+ }
+ #by_sort_>option{
+    font-size: 18px;
+    color: gray;
+ }
+
  /* main product details img, price , and color */
  #product__img_name_price{
      display: flex;
@@ -128,3 +139,5 @@
  #product_plus_dicount{
      color: cadetblue;
  }
+
+ /* sort section  */

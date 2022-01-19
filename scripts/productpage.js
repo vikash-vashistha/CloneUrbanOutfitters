@@ -15,7 +15,7 @@
             img1:"https://images.urbndata.com/is/image/UrbanOutfitters/65317018_023_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
             img2:"https://images.urbndata.com/is/image/UrbanOutfitters/65317018_023_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
             name:"Out From Under Aria Seamed Flare Pant",
-            price:"$55.00",
+            price:"40.00",
             discount:"10% off",
             size:"M",
             color:"yello",
@@ -26,7 +26,7 @@
             img1:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_d?$xlarge$&fit=constrain&qlt=80&wid=100",
             img2:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_b?$xlarge$&fit=constrain&qlt=80&wid=100",
             name:"Out From Under Aria Seamed Flare Pant",
-            price:"$55.00",
+            price:"60.00",
             discount:"10% off",
             size:"M",
             color:"yello",
@@ -47,7 +47,7 @@
         {
             img1:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_d?$xlarge$&fit=constrain&qlt=80&wid=100",
             img2:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_b?$xlarge$&fit=constrain&qlt=80&wid=100",
-            name:"Out From Under Aria Seamed Flare Pant",
+            name:"ZOut From Under Aria Seamed Flare Pant",
             price:"$55.00",
             discount:"10% off",
             size:"M",
@@ -58,7 +58,7 @@
         {
             img1:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_d?$xlarge$&fit=constrain&qlt=80&wid=100",
             img2:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_b?$xlarge$&fit=constrain&qlt=80&wid=100",
-            name:"Out From Under Aria Seamed Flare Pant",
+            name:"XOut From Under Aria Seamed Flare Pant",
             price:"$55.00",
             discount:"10% off",
             size:"M",
@@ -69,7 +69,7 @@
         {
             img1:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_d?$xlarge$&fit=constrain&qlt=80&wid=100",
             img2:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_b?$xlarge$&fit=constrain&qlt=80&wid=100",
-            name:"Out From Under Aria Seamed Flare Pant",
+            name:"BOut From Under Aria Seamed Flare Pant",
             price:"$55.00",
             discount:"10% off",
             size:"M",
@@ -80,8 +80,8 @@
         {
             img1:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_d?$xlarge$&fit=constrain&qlt=80&wid=100",
             img2:"https://images.urbndata.com/is/image/UrbanOutfitters/61655031_084_b?$xlarge$&fit=constrain&qlt=80&wid=100",
-            name:"Out From Under Aria Seamed Flare Pant",
-            price:"$55.00",
+            name:"BOut From Under Aria Seamed Flare Pant",
+            price:"10.00",
             discount:"10% off",
             size:"L",
             color:"green",
@@ -180,6 +180,9 @@
 document.getElementById("bysize_").addEventListener("change", ()=>{
     let filter_items = data.filter(function(ele){
         var val = document.getElementById("bysize_").value;
+        if(val=="size"){
+            return ele.size
+        }
         return ele.size ==val;
     })
     document.getElementById("product__img_name_price").innerHTML=null;
@@ -213,14 +216,7 @@ document.getElementById("bysize_").addEventListener("change", ()=>{
 
     ///////    by price filter 
 
-    // document.querySelector(".b200").addEventListener("click", filtby200);
-    // function filtby200(){
-    //     var filtbyprice = productData.filter(function(ele){
-    //         return Number(ele.price)<= 100;
-    //     }); 
-    //       console.log(filtbyprice)
-    //       display(filtbyprice)
-    // }
+  
 
     document.getElementById("byprice_").addEventListener("change", ()=>{
         let filter_items = data.filter(function(ele){
@@ -237,3 +233,28 @@ document.getElementById("bysize_").addEventListener("change", ()=>{
     //////////////////////////////////   sort function here            /////////////////////////////////
 
 
+        document.getElementById("by_sort_").addEventListener("change",()=>{
+            let sort_items = data.sort(function(a,b){
+                 let val = document.getElementById("by_sort_").value;
+
+                 if(val=="lowtohigh"){
+                     return Number(a.price) - Number(b.price);
+                 }
+                 else if(val == "hightolow"){
+                     return Number(b.price) - Number(a.price);
+                 }
+                 else if(val=="az"){
+                    if (a.name < b.name) return -1;
+                    return 0;
+                 }
+                 else if(val=="za"){
+                    if (a.name > b.name) return -1;
+                    return 0;
+                 }
+
+            })
+
+            document.getElementById("product__img_name_price").innerHTML=null;
+            // console.log(sort_items);
+            appenddata(sort_items)
+        })
