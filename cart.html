@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Bag | Urban Outfitters</title>
   <link rel="stylesheet" href="./styles/navbar.css">
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/cart.css">
@@ -15,8 +15,27 @@
 </head>
 
 <body>
+
   <div id="navbar"></div>
-  <div id="main"></div>
+  <div id="body">
+    <div id="main"></div>
+    <div id="summary">
+      <p>
+        <a>Subtotal</a>
+        <a>$${}</a>
+      </p>
+      <p>Shipping TBD</p>
+      <p>
+        <a>Estimated Tax
+        </a>
+        <a>$${}</a>
+      </p>
+      <p><b>Total</b> <b>$${}</b></p>
+      <button>Continue</button>
+      <hr>
+      <p id="promo">promo code</p>
+    </div>
+  </div>
   <div id="slider">
     <h3>For You</h3>
     <hr>
@@ -129,7 +148,9 @@
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   console.log(cart);
   let main = document.getElementById("main");
+  let total = 0;
   function display() {
+    main.textContent = "";
     cart.map(function (elem, index) {
       console.log(elem);
       let div = document.createElement("div");
@@ -138,11 +159,11 @@
         alt="">
       <div>
         <p id="name">${elem.name}</p>
-        <p id="size">${elem.size}</p>
-        <p id="name">${elem.brand}</p>
-        <p id="size">${elem.color}</p>
+        <p id="size"><b>size </b >${elem.size}</p>
+        <p id="name"><b>brand </b >${elem.brand}</p>
+        <p id="size"><b>color </b >${elem.color}</p>
       </div>
-      <p id="price">$${elem.price}</p>
+      <p id="price"><b>Price </b >$${elem.price}</p>
       <select name="" id="quantity">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -150,9 +171,41 @@
         <option value="4">4</option>
         <option value="5">5</option>
       </select>
-      <p id="total">$${elem.price}</p>`
+      <div>
+        <p id="total"><b>Total </b >$${elem.price}</p>
+        <p id="remove">Remove</p>
+      </div>`
+      total += Number(elem.price)
       main.append(div)
+
+      document.getElementById("remove").addEventListener("click", function () {
+        remove_cart(index)
+      })
     })
+    document.getElementById("summary").innerHTML = ` <p>
+          <a>Subtotal</a>
+          <a>$${total}</a>
+        </p>
+        <p>Shipping TBD</p>
+        <p>
+          <a>Estimated Tax
+          </a>
+          <a>$${0.0}</a>
+        </p>
+        <p><b>Total</b> <b>$${total}</b></p>
+        <button>Continue</button>
+        <hr>
+        <p id="promo">promo code</p>
+      </div>`;
   }
-  display()
+  display();
+
+  function remove_cart(index) {
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    location.reload()
+    display();
+  }
+
+
 </script>

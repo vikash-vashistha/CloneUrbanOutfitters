@@ -1,11 +1,12 @@
 div {
-  border: 1px solid red;
+  border: 1px solid transparent;
   font-family: sans-serif;
 }
 
 #main {
+  cursor: pointer;
   margin: auto;
-  width: 90%;
+  width: 75%;
   margin-top: 120px;
   margin-bottom: 50px;
 }
@@ -14,19 +15,24 @@ div {
   margin-top: 20px;
   display: flex;
   height: 130px;
-  width: 70%;
+  width: 90%;
 }
 
 #main img {
   height: 100%;
-  width: 40%;
+  width: 30%;
 }
 
 #main > div > div {
-  margin-left: 10px;
+  margin-left: 20px;
   height: 100%;
   width: 40%;
   text-align: center;
+
+  font-size: 12px;
+  line-height: 19px;
+  color: #222222;
+  font-weight: 400;
 }
 
 #main > div > p {
@@ -40,4 +46,57 @@ div {
   margin-top: 50px;
   height: 15%;
   width: 10%;
+}
+
+#remove {
+  margin-top: 75px;
+  font-size: 12px;
+  line-height: 19px;
+  color: #222222;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+#body {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#summary {
+  margin-top: 120px;
+  width: 25%;
+  height: 350px;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  /* word-spacing: 2px; */
+  line-height: 2;
+  /* color: gray; */
+}
+
+#summary > p {
+  display: flex;
+  justify-content: space-between;
+}
+
+#summary > button {
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+  height: 50px;
+  background-color: black;
+  color: whitesmoke;
+}
+
+hr {
+  margin: auto;
+  width: 90%;
+  margin-top: 20px;
+}
+
+#promo {
+  margin-top: 20px;
+  margin-left: 15px;
 }

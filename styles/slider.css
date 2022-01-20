@@ -16,3 +16,12 @@
   margin: auto;
   width: 90%;
 }
+
+#slider p {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 19px;
+  color: #222222;
+  font-weight: 400;
+  text-decoration: underline;
+}
