@@ -1,4 +1,4 @@
-
+console.log(document.getElementById("clo_divf").value)
 
 function check_user(){
     let checr=JSON.parse(localStorage.getItem("checkiacc"))
