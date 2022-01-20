@@ -169,5 +169,12 @@
 
   let foot = document.getElementById("footer");
   foot.innerHTML = footer()
+
+  let bag = document.querySelector(".fa-shopping-bag");
+    console.log(bag);
+
+    bag.addEventListener("click", function () {
+        window.location.href = "cart.html";
+    });
 </script>
 <script src="./scripts/productpage.js"></script>
