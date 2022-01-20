@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/productpage.css">
+    <link rel="stylesheet" href="./styles/mens.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
     
 </head>
+<style>
+    #section_name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+</style>
 
 <body>
     <!-- top offers -->
@@ -21,14 +30,15 @@
       <!-- products data body  -->
 
       <div id="main_productdata_body">
+          <div id="section_name">Women's / Shoes </div>
 
     <div id="all_product_data">
 
         <div id="products_categories">
-            <div id="categories_1"><img src="https://images.ctfassets.net/q602vtcuu3w3/1Ow7cF3Y9ydUqEPmjR0IJG/6620c7f6765a9086d020cc19f96206f1/22_JAN_WK1_W_OPT_BANNERS_EM.jpg?w=563&q=80&fm=webp" alt=""></div>
-            <div id="categories_2"><img src="https://images.ctfassets.net/q602vtcuu3w3/128rwAQjtiAGFtFHLVZIJX/cbb0ce0b51638e82476e8f1de3e6f26e/22_JAN_WK1_W_OPT_BANNERS_EM4.jpg?w=563&q=80&fm=webp" alt=""></div>
-            <div id="categories_3"><img src="https://images.ctfassets.net/q602vtcuu3w3/30VOrWNAZpvetontWKjjjt/2da65909ad608a086f5e5c7426f714e5/22_JAN_WK1_W_OPT_BANNERS_EM2.jpg?w=563&q=80&fm=webp" alt=""></div>
-            <div id="categories_4"><img src="https://images.ctfassets.net/q602vtcuu3w3/5xQH1HYsG3SpKgmPlhihiY/98b1763bb5e8ebd7d558dd98ede7af0f/22_JAN_WK1_W_OPT_BANNERS_EM5.jpg?w=563&q=80&fm=webp" alt=""></div>
+            <div id="categories_1"><img src="https://images.ctfassets.net/q602vtcuu3w3/64JSJTrEFrPqf2U28SqhVE/bd5779361333420555ee8a8e91ede041/21_11_WK4_W_B_OPTIMIZED100.jpg?w=563&q=80&fm=webp" alt=""></div>
+            <div id="categories_2"><img src="https://images.ctfassets.net/q602vtcuu3w3/4UY0dgYHcgxVeTa9vh4SCq/79f00db711b69cc9f9b1fd6bf6a80c12/21_12_WK4_H_M_OPTIMIZED10.jpg?w=563&q=80&fm=webp" alt=""></div>
+            <div id="categories_3"><img src="https://images.ctfassets.net/q602vtcuu3w3/5ll7ix4ebCvbG0BgbVklKK/c640ecf2ac549e175ce7dd3b0c716064/21_12_WK4_H_M_OPTIMIZED9.jpg?w=563&q=80&fm=webp" alt=""></div>
+            <div id="categories_4"><img src="https://images.ctfassets.net/q602vtcuu3w3/4h7YrIzbsgRvCxv4vJMNGZ/c671bf965c03cb1cf66fa8122767150e/21_12_WK4_H_M_OPTIMIZED7.jpg?w=563&q=80&fm=webp" alt=""></div>
         </div>
 
     </div>
@@ -41,12 +51,15 @@
                     <li style="list-style-type: none;"><b>browse by:</b></li>
                     <li>All Category</li>
                     <li>---</li>
-                    <li>Dresses</li>
-                    <li>Jeanse</li>
-                    <li>Tops</li>
-                    <li>Coats+Jackets</li>
-                    <li>bottoms</li>
-                    <li id="to_swomenshoe_page">Shoes</li>
+                    <li>New</li>
+                    <li>Graphic Tees</li>
+                    <li>Coats +Jackets</li>
+                    <li>Bottoms</li>
+                    <li>Underwear + Loungs</li>
+                    <li>Grooming</li>
+                    <li>Vintage</li>
+                    <li>Accessories</li>
+                    <li>Sale</li>
               
                     <li><b>Filter by:</b></li>
                     <hr style="width: 100%; height: 1px;">
@@ -108,7 +121,7 @@
         <!-- number of products and _ sorting section -->
             <div id="products_count_sort">
 
-                <div id="products_section_count">Women's Clothing: Tops, Dresses, Denim + More <span id="number_of_products_">30 products</span> </div>
+                <div id="products_section_count">Women's Shoes: Sandals, Sneakers + Boots <span id="number_of_products_">30 products</span> </div>
 
                 <div id="sort_function">
                       sort : 
@@ -157,8 +170,6 @@
 </body>
 </html>
 <script type="module">
-
-
     
   import navbar from './components/navbar.js'
   import footer from './components/footer.js'
@@ -166,27 +177,11 @@
 
   nav.innerHTML = navbar()
 
-
  let cart = JSON.parse(localStorage.getItem("cart"))
   document.querySelector(".fa-shopping-bag").innerHTML = cart.length;
 
   let foot = document.getElementById("footer");
   foot.innerHTML = footer()
-
-
-  
-    ///////////////////////////////////////////////////
-
-    ////change location of page //////
-
-    document.getElementById("categories_2").addEventListener("click", ()=>{
-        window.location.href = "womenshoe.html"
-    })
-    document.getElementById("to_swomenshoe_page").addEventListener("click", ()=>{
-        window.location.href = "womenshoe.html"
-    })
-
-    //////////////////////////////////////
 
   let bag = document.querySelector(".fa-shopping-bag");
     console.log(bag);
@@ -194,7 +189,5 @@
     bag.addEventListener("click", function () {
         window.location.href = "cart.html";
     });
-
-
 </script>
-<script src="./scripts/productpage.js"></script>
+<script src="./scripts/mens.js"></script>

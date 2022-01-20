@@ -19,7 +19,7 @@ function navbar() {
           <h1>URBAN OUTFITTERS
           </h1>
         </li>
-        <li>Women's
+        <li id="change_to_women_page">Women's
           <div class="mega-menu">
             <div class="inner-mega-menu">
               <h3>Shop by Category</h3>
@@ -50,7 +50,7 @@ function navbar() {
             </div>
             <div class="inner-mega-menu">
               <p>UO Summer Class '21</p>
-              <p>Shop All Women's</p>
+              <p >Shop All Women's</p>
               <p>2000's Nostalgia</p>
               <p>Selling Fast</p>
               <p>The Music Shop</p>
