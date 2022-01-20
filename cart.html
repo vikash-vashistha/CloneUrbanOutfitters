@@ -19,22 +19,7 @@
   <div id="navbar"></div>
   <div id="body">
     <div id="main"></div>
-    <div id="summary">
-      <p>
-        <a>Subtotal</a>
-        <a>$${}</a>
-      </p>
-      <p>Shipping TBD</p>
-      <p>
-        <a>Estimated Tax
-        </a>
-        <a>$${}</a>
-      </p>
-      <p><b>Total</b> <b>$${}</b></p>
-      <button>Continue</button>
-      <hr>
-      <p id="promo">promo code</p>
-    </div>
+    <div id="summary"></div>
   </div>
   <div id="slider">
     <h3>For You</h3>
@@ -149,11 +134,15 @@
   console.log(cart);
   let main = document.getElementById("main");
   let total = 0;
-  function display() {
-    main.textContent = "";
+  function display(cart) {
+    main.innerHTML = null;
     cart.map(function (elem, index) {
-      console.log(elem);
+      // console.log(elem, index);
       let div = document.createElement("div");
+      div.setAttribute("id", "remove")
+      let img = document.createElement("img");
+      img.src = elem.img1;
+      div.append(img)
       div.innerHTML = ` <img
         src=${elem.img1}
         alt="">
@@ -176,11 +165,14 @@
         <p id="remove">Remove</p>
       </div>`
       total += Number(elem.price)
-      main.append(div)
 
-      document.getElementById("remove").addEventListener("click", function () {
-        remove_cart(index)
+      // var del = document.querySelector("#remove");
+      div.addEventListener("click", function () {
+        console.log(elem, index);
+        remove_cart(elem, index);
       })
+      main.append(div)
+      // console.log(main);
     })
     document.getElementById("summary").innerHTML = ` <p>
           <a>Subtotal</a>
@@ -198,13 +190,15 @@
         <p id="promo">promo code</p>
       </div>`;
   }
-  display();
+  display(cart);
 
-  function remove_cart(index) {
+  function remove_cart(elem, index) {
     cart.splice(index, 1);
+    total -= Number(elem.price);
     localStorage.setItem("cart", JSON.stringify(cart));
+    display(cart)
+    console.log(index);
     location.reload()
-    display();
   }
 
 
