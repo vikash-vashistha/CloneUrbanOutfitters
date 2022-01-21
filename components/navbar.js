@@ -16,7 +16,7 @@ function navbar() {
   <nav class="nav-bar">
     <ul>
       <li>
-        <h1>URBAN OUTFITTERS
+        <h1 id="back">URBAN OUTFITTERS
         </h1>
       </li>
       <li>Women's
@@ -25,7 +25,7 @@ function navbar() {
             <h3>Shop by Category</h3>
             <div>
               <div>
-                <p id="ws1">Shop All Women's</p>
+                <p id="women">Shop All Women's</p>
                 <p>New</p>
                 <p>Dresses</p>
                 <p>Rompers + Jumpsuits</p>
@@ -78,7 +78,7 @@ function navbar() {
             <h3>Shop by Category</h3>
             <div>
               <div>
-                <p>Shop All Men's</p>
+                <p id="mens">Shop All Men's</p>
                 <p>New</p>
                 <p>Graphic Tees</p>
                 <p>Tops</p>
@@ -183,7 +183,7 @@ function navbar() {
             <h3>Shop by Category</h3>
             <div>
               <div>
-                <p>Shop All Lifestyle</p>
+                <p id="lifestyle">Shop All Lifestyle</p>
                 <p>New</p>
                 <p>Music</p>
                 <p>Electronics + Accessories</p>

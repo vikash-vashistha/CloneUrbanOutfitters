@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
   <div id="nav"></div>
   <div id="body">
     <div>
@@ -472,11 +473,42 @@
   //     document.querySelector(".carousel").append(div)
   //   })
   // }
-  let ws1 = document.querySelector("#ws1");
-  console.log(ws1);
-  ws1.addEventListener("click", function () {
-    window.location.href = "productpage.html"
+  let searchbar = document.getElementById("search")
+  searchbar.addEventListener("keypress", searchNews)
+
+  async function searchNews(event) {
+    if (event.key === "Enter") {
+      // response = await apiCall(searchbar.value)
+      let query = search.value;
+      console.log(search.value);
+      window.location.href = `${query}.html`
+    }
+  }
+
+
+  let women = document.querySelector("#women");
+  women.addEventListener("click", function () {
+    window.location.href = "women.html"
   })
+
+  let mens = document.querySelector("#mens");
+  mens.addEventListener("click", function () {
+    window.location.href = "mens.html"
+  })
+
+  let lifestyle = document.querySelector("#lifestyle");
+  lifestyle.addEventListener("click", function () {
+    window.location.href = "lifestyle.html"
+  })
+
+
+  let womenshoe = document.querySelector("#womenshoe");
+  womenshoe.addEventListener("click", function () {
+    window.location.href = "womenshoe.html"
+  })
+
+
+
 
   let bag = document.querySelector(".fa-shopping-bag");
   console.log(bag);
@@ -484,6 +516,10 @@
   bag.addEventListener("click", function () {
     window.location.href = "cart.html";
   });
+
+  document.getElementById("back").addEventListener("click", function () {
+    window.location.href = "index.html"
+  })
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

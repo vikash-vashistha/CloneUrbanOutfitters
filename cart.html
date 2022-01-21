@@ -126,6 +126,10 @@
 
   let foot = document.getElementById("footer");
   foot.innerHTML = footer()
+
+  document.getElementById("back").addEventListener("click", function () {
+    window.location.href = "index.html"
+  })
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -139,10 +143,6 @@
     cart.map(function (elem, index) {
       // console.log(elem, index);
       let div = document.createElement("div");
-      div.setAttribute("id", "remove")
-      let img = document.createElement("img");
-      img.src = elem.img1;
-      div.append(img)
       div.innerHTML = ` <img
         src=${elem.img1}
         alt="">
@@ -185,10 +185,11 @@
           <a>$${0.0}</a>
         </p>
         <p><b>Total</b> <b>$${total}</b></p>
-        <button>Continue</button>
+        <button id="continue">Continue</button>
         <hr>
         <p id="promo">promo code</p>
       </div>`;
+    localStorage.setItem("total", JSON.stringify(total));
   }
   display(cart);
 
@@ -201,5 +202,8 @@
     location.reload()
   }
 
+  document.getElementById("continue").addEventListener("click", function () {
+    window.location.href = "checkout.html"
+  })
 
 </script>

@@ -156,12 +156,12 @@ hr {
 }
 
 p {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-size: 12px;
   line-height: 19px;
   color: #222222;
   font-weight: 400;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 #oudivcontainer {
