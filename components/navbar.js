@@ -8,10 +8,22 @@ function navbar() {
       <i class="fas fa-credit-card"></i>
       Gift Cards
     </div>
-    <div>
-      <i class="far fa-user-circle"></i>
-      Sign In
-    </div>
+
+
+
+    <div id="signindiv">
+    <div id="signb">
+    <i class="far fa-user-circle"></i>
+    Sign In</div>
+</div>
+<div id="myaccdiv">
+    <div id="myacc">My Account</div>
+</div>
+</div>
+
+
+
+
   </div>
   <nav class="nav-bar">
     <ul>
@@ -128,7 +140,7 @@ function navbar() {
             <h3>Shop by Category</h3>
             <div>
               <div>
-                <p>Shop All Home</p>
+                <p id="home">Shop All Home</p>
                 <p>New</p>
                 <p>In Stock + Ready To Ship</p>
                 <p>Bedding</p>
