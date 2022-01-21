@@ -442,37 +442,6 @@
 
   let foot = document.getElementById("footer");
   foot.innerHTML = footer()
-
-  // async function getProduct() {
-
-  //   try {
-  //     let response = await fetch(`http://localhost:3000/api/products`);
-
-  //     let data = await response.json();
-  //     console.log(data);
-  //     display(data)
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // }
-  // getProduct()
-  // function display(data) {
-  //   data.map(function (element) {
-  //     // var id = document.createElement("h3")
-  //     var p = document.createElement("p");
-  //     var img = document.createElement("img");
-  //     var div1 = document.createElement("div");
-  //     var div = document.createElement("div");
-  //     // id.textContent = element.id;
-  //     p.textContent = element.name;
-  //     img.src = element.url1;
-
-  //     div1.append(img, p)
-  //     div.append(div1)
-  //     div.setAttribute("class", "carousel-cell")
-  //     document.querySelector(".carousel").append(div)
-  //   })
-  // }
   let searchbar = document.getElementById("search")
   searchbar.addEventListener("keypress", searchNews)
 
@@ -501,11 +470,6 @@
     window.location.href = "lifestyle.html"
   })
 
-
-  let womenshoe = document.querySelector("#womenshoe");
-  womenshoe.addEventListener("click", function () {
-    window.location.href = "womenshoe.html"
-  })
 
 
 
