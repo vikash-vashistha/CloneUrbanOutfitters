@@ -1,0 +1,89 @@
+.commentbox {
+    width: 830px;
+    margin-left: 250px;
+  } 
+
+     .para_text {
+      font-size: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+    .h1 {
+      font-size: xx-large;
+      font-weight: 500;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      word-spacing: 4px;
+  }
+
+    .poster_img {
+      width: 1150px;
+      height: 430px;
+      margin: 10px;
+      margin-left: 60px;
+  }
+
+    .ques {
+      font-size: small;
+      font-weight: 900;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      word-spacing: 3px;
+  }
+
+  <!--IMAGEBOX-->
+
+
+  .img5Box {
+    width: 1200px;
+    height: 300px;
+    display: flex;
+   }
+
+  .img5box {
+    width: 220px;
+    height: 300px;
+    margin: 9px;
+  }
+
+  .img3Box {
+      width: 1160px;
+      height: 500px;
+      margin-left: 40px;
+      display: flex;
+  }
+ 
+  .img3box {
+      width: 370px;
+      height: 480px;
+      margin: 10px;
+  }
+
+  .Image {
+      width: 350px;
+      height: 380px;
+      margin: 7px;
+  }
+
+  .txt3box {
+      width: 330px;
+      height: 50px;
+      margin: 10px;
+  }
+
+  .imageurl{
+      width: 350px;
+      height: 380px;
+  }
+
+  .readmore {
+      background-color: white;
+      border: transparent;
+      text-decoration: underline;
+  }
+
+  .button {
+      margin-left: 550px;
+      background-color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: x-small;
+      padding: 5px;
+  }

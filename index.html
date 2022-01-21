@@ -299,21 +299,21 @@
         src="https://images.ctfassets.net/q602vtcuu3w3/79mmHZqmJBOYT0VvhBl9xE/b0f811f346c47cff788e91bcc025e6db/22-UO-COMMUNITY-JAN-WEEK3-NM-Slices153.jpg?w=670&q=80&fm=webp"
         alt="">
       <h1>UO Love Shop: Meet the Cast</h1>
-      <p>Read More</p>
+      <p id="read1">Read More</p>
     </div>
     <div>
       <img
         src="https://images.ctfassets.net/q602vtcuu3w3/42ZMwGFmnrN8DEC9INQCi1/26682507eff2f130e07aadf26da473ba/22-UO-COMMUNITY-JAN-WEEK3-NM-Slices154.jpg?w=670&q=80&fm=webp"
         alt="">
       <h1>UO on You: Buenos Aires with Sophia and Sofia</h1>
-      <p>Read More</p>
+      <p id="read2">Read More</p>
     </div>
     <div>
       <img
         src="https://images.ctfassets.net/q602vtcuu3w3/6axytVZ124h4B9cGrkgoyy/b3cc84d1d40a2f2beec28b0f7fa1435c/21-UO-COMMUNITY-DEC-WEEK3-NM_sliced.jpg?w=670&q=80&fm=webp"
         alt="">
       <h1>UO Summer Class: Meet Jalen</h1>
-      <p>Read More</p>
+      <p id="read3">Read More</p>
     </div>
   </div>
   <div id="slider">
@@ -453,7 +453,30 @@
       window.location.href = `${query}.html`
     }
   }
+  let gift = document.querySelector("#gift");
+  gift.addEventListener("click", function () {
+    window.location.href = "gift.html"
+  })
 
+  let rewards = document.querySelector("#rewards");
+  rewards.addEventListener("click", function () {
+    window.location.href = "rewards.html"
+  })
+
+  let read1 = document.querySelector("#read1");
+  read1.addEventListener("click", function () {
+    window.location.href = "readmore1.html"
+  })
+
+  let read2 = document.querySelector("#read2");
+  read2.addEventListener("click", function () {
+    window.location.href = "readmore2.html"
+  })
+
+  let read3 = document.querySelector("#read3");
+  read3.addEventListener("click", function () {
+    window.location.href = "readmore3.html"
+  })
 
   let women = document.querySelector("#women");
   women.addEventListener("click", function () {

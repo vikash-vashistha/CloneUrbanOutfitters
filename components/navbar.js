@@ -1,10 +1,10 @@
 function navbar() {
   return `<div id="title">
-    <div>
+    <div id="rewards">
       <i class="fas fa-star-of-david"></i>
       UO Rewards
     </div>
-    <div>
+    <div id="gift">
       <i class="fas fa-credit-card"></i>
       Gift Cards
     </div>
