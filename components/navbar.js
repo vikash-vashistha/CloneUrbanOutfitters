@@ -17,7 +17,7 @@ function navbar() {
     Sign In</div>
 </div>
 <div id="myaccdiv">
-    <div id="myacc">My Account</div>
+    <div id="myacc">Click here to <b>Sign Out</b></div>
 </div>
 </div>
 
