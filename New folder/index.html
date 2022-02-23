@@ -836,7 +836,7 @@
     try {
       let data = {
         email: document.getElementById("signup_mail").value,
-        password: document.getElementById("signup_pass").value,
+        password: document.getElementById("sineup_pass").value,
       }
 
       data = JSON.stringify(data);
@@ -905,11 +905,11 @@
   var checkarr = JSON.parse(localStorage.getItem("mainsignup")) || [];
   document.getElementById("sign_inb").addEventListener("click", async function (event) {
     event.preventDefault();
-
+console.log("signin")
     try {
       let data = {
-        email: document.getElementById("signin_mail").value,
-        password: document.getElementById("signin_pass").value,
+        email: document.getElementById("ent_e").value,
+        password: document.getElementById("sign_p").value,
       }
 
       data = JSON.stringify(data);
@@ -927,7 +927,7 @@
     } catch (error) {
       console.log(error);
     }
-    
+
     let checkarr = JSON.parse(localStorage.getItem("mainsignup")) || [];
     console.log("yes", checkarr)
     let emailee = document.getElementById("ent_e").value;
