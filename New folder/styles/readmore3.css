@@ -1,0 +1,111 @@
+.Box2img {
+    width: 1150px;
+    height: 500px;
+    margin: auto;
+}
+
+.box2img {
+    width: 550px;
+    height: 500px;
+}
+
+.box2Img {
+    width: 550px;
+    height: 500px; 
+}
+
+.commentbox {
+   width: 780px;
+   margin-left: 250px;
+}
+
+.para_text {
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+#comment{
+    word-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.big_img{
+    width: 1200px;
+    height: 600px;
+    margin-left: 30px;
+}
+
+#que {
+    font-weight: 700;
+    word-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.commentbox {
+width: 780px;
+margin-left: 250px;
+font-size: 16px;
+} 
+
+.img5Box {
+width: 1200px;
+height: 300px;
+display: flex;
+}
+
+.img5box {
+width: 220px;
+height: 300px;
+margin: 9px;
+}
+
+.h1 {
+  font-size: xx-large;
+  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  word-spacing: 4px;
+}
+
+.img3Box {
+  width: 1160px;
+  height: 500px;
+  margin-left: 40px;
+  display: flex;
+}
+
+.img3box {
+  width: 370px;
+  height: 480px;
+  margin: 10px;
+}
+
+.Image {
+  width: 350px;
+  height: 380px;
+  margin: 7px;
+}
+
+.txt3box {
+  width: 330px;
+  height: 50px;
+  margin: 10px;
+}
+
+.imageurl{
+  width: 350px;
+  height: 380px;
+}
+
+.readmore {
+  background-color: white;
+  border: transparent;
+  text-decoration: underline;
+}
+
+.button {
+  margin-left: 550px;
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-small;
+  padding: 5px;
+}

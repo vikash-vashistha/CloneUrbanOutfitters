@@ -1,0 +1,27 @@
+.carousel {
+  margin: auto;
+}
+
+.carousel-cell {
+  margin-left: 15px;
+  padding-top: 5px;
+  width: 20%;
+}
+
+.carousel-cell > img {
+  height: 90%;
+}
+
+#slider {
+  margin: auto;
+  width: 90%;
+}
+
+#slider p {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 19px;
+  color: #222222;
+  font-weight: 400;
+  text-decoration: underline;
+}
