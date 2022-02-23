@@ -361,7 +361,6 @@
     </div>
     <div id="footer"></div>
 </body>
-
 </html>
 <script type="module">
     import footer from './components/footer.js'
@@ -397,7 +396,6 @@ async function sendEmail(){
       location:document.getElementById("locationinp").value,
       email:document.getElementById("guestinp").value
     }
-  
         checkout_data=JSON.stringify(checkout_data);
 
         let checkout_api='http//:localhost:4000/checkout';
@@ -411,9 +409,6 @@ async function sendEmail(){
       });
     }      
      else
-         alert("please enter all required details");
-    
+         alert("please enter all required details"); 
 }
-
-
 </script>
