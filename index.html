@@ -643,17 +643,17 @@
 
   let foot = document.getElementById("footer");
   foot.innerHTML = footer()
-  let searchbar = document.getElementById("search")
-  searchbar.addEventListener("keypress", searchNews)
+  // let searchbar = document.getElementById("search")
+  // searchbar.addEventListener("keypress", searchNews)
 
-  async function searchNews(event) {
-    if (event.key === "Enter") {
-      // response = await apiCall(searchbar.value)
-      let query = search.value;
-      console.log(search.value);
-      window.location.href = `${query}.html`
-    }
-  }
+  // async function searchNews(event) {
+  //   if (event.key === "Enter") {
+  //     // response = await apiCall(searchbar.value)
+  //     let query = search.value;
+  //     console.log(search.value);
+  //     window.location.href = `${query}.html`
+  //   }
+  // }
   let gift = document.querySelector("#gift");
   gift.addEventListener("click", function () {
     window.location.href = "gift.html"
