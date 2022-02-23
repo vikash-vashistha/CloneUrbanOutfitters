@@ -643,17 +643,17 @@
 
   let foot = document.getElementById("footer");
   foot.innerHTML = footer()
-  // let searchbar = document.getElementById("search")
-  // searchbar.addEventListener("keypress", searchNews)
+  let searchbar = document.getElementById("search")
+  searchbar.addEventListener("keypress", searchNews)
 
-  // async function searchNews(event) {
-  //   if (event.key === "Enter") {
-  //     // response = await apiCall(searchbar.value)
-  //     let query = search.value;
-  //     console.log(search.value);
-  //     window.location.href = `${query}.html`
-  //   }
-  // }
+  async function searchNews(event) {
+    if (event.key === "Enter") {
+      // response = await apiCall(searchbar.value)
+      let query = search.value;
+      console.log(search.value);
+      window.location.href = `${query}.html`
+    }
+  }
   let gift = document.querySelector("#gift");
   gift.addEventListener("click", function () {
     window.location.href = "gift.html"
@@ -736,6 +736,8 @@
   check_user()
   document.getElementById("myacc").addEventListener("click", function (event) {
     event.preventDefault()
+    localStorage.setItem("token", null)
+
     localStorage.setItem("checkiacc", JSON.stringify(0))
     check_user()
   })
@@ -905,7 +907,7 @@
   var checkarr = JSON.parse(localStorage.getItem("mainsignup")) || [];
   document.getElementById("sign_inb").addEventListener("click", async function (event) {
     event.preventDefault();
-console.log("signin")
+    console.log("signin")
     try {
       let data = {
         email: document.getElementById("ent_e").value,
@@ -923,7 +925,10 @@ console.log("signin")
       });
 
       let data1 = await response.json();
-      console.log(data1);
+      let data_token = data1.token;
+      console.log(data_token);
+      // storing token in to local storage
+      localStorage.setItem("token", JSON.stringify(data_token));
     } catch (error) {
       console.log(error);
     }
