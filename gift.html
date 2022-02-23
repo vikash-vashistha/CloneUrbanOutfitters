@@ -160,7 +160,6 @@
     import navbar from './components/navbar.js'
     import footer from './components/footer.js'
     let nav = document.getElementById("nav");
-  
     nav.innerHTML = navbar()
     let cart = JSON.parse(localStorage.getItem("cart")) || []
     document.querySelector(".fa-shopping-bag").innerHTML = cart.length;
@@ -173,12 +172,9 @@
     })
     let bag = document.querySelector(".fa-shopping-bag");
     console.log(bag);
-  
     bag.addEventListener("click", function () {
       window.location.href = "cart.html";
-    });
-
-    
+    }); 
   document.getElementById("back").addEventListener("click", function () {
     window.location.href = "index.html"
   })
