@@ -51,8 +51,9 @@
   width: 70%;
 }
 #checkoutcontainerright {
+  
   width: 30%;
-  /* border: 1px solid green; */
+  
 }
 #checouttopdiv {
   width: 90%;
@@ -147,7 +148,7 @@
 #checkoutcontainerright {
   margin-top: 100px;
   height: 200px;
-  position: fixed;
+  position: absolute;
   margin-left: 65%;
   width: 20%;
 }
@@ -190,4 +191,10 @@
   margin-top: 10%;
   margin-left: 7%;
   margin-bottom: 5%;
+}
+#checkoutdetails{
+  background: black;
+  color: white;
+  width: 150px;
+  height: 30px;
 }

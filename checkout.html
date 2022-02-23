@@ -24,6 +24,7 @@
                 <label for="">/ Payment</label>
                 <label for="">/ Review</label>
             </div>
+            <form onsubmit="sendEmail(); reset(); return false">
             <div id="guestdiv">
                 <p>Check Out as a Guest</p>
                 <h6>Email Address:*</h6>
@@ -290,15 +291,15 @@
                 <div id="infodiv">
                     <div>
                         <p>First Name*</p>
-                        <input type="text">
+                        <input type="text" id="firstname">
                     </div>
                     <div>
                         <p>Last Name*</p>
-                        <input type="text">
+                        <input type="text" id="lastname">
                     </div>
                 </div><br><br>
                 <h6>Street Address*</h6>
-                <input id="locationinp" type="text" placeholder="Enter a location"><br><br>
+                <input id="locationinp" type="text" placeholder="Enter a location" ><br><br>
                 <h6>Address 2</h6>
                 <input id="addressinp" type="text" placeholder="Building,Suit Apartment Number"><br><br>
                 <input type="checkbox">
@@ -319,7 +320,10 @@
                 <h6>Daytime Phone*</h6>
                 <input id="daytime" type="text" placeholder="Do not enter a country code">
             </div><br><br><br>
+            <!-- <input id="checkoutdetails" type="submit" placeholder="submit"> -->
+
         </div>
+    </form>
         <div id="checkoutcontainerright">
             <div id="summary">
                 <p>Order Summary</p>
@@ -346,7 +350,7 @@
                     <p>Total</p>
                     <p id="totalamount">$0.00</p>
                 </div>
-                <button id="btn">Continue</button>
+                <button id="btn" onclick="sendEmail()">Continue</button>
                 <hr>
                 <div>
                     <p>promocode</p>
@@ -369,7 +373,11 @@
     var total = JSON.parse(localStorage.getItem("total")) || 0;
     console.log(`$${total - 15}`)
     document.querySelector('#Subtotalamount').textContent = `$${total}`
+    if(total)
     document.querySelector('#totalamount').textContent = `$${total - 15}`
+    else
+    document.querySelector('#totalamount').textContent = `$${0}`
+
 
     document.getElementById("btn").addEventListener('click', function () {
         alert("congratulations your order is placed")
@@ -378,4 +386,34 @@
     document.getElementById("numberofitems").addEventListener("click", function () {
         window.location.href = "cart.html"
     })
+</script>
+<script>
+  
+async function sendEmail(){
+    if(firstname&&lastname&&location&&email){
+    checkout_data={
+      firstname:document.getElementById("firstname").value,
+      lastname:document.getElementById("lastname").value,
+      location:document.getElementById("locationinp").value,
+      email:document.getElementById("guestinp").value
+    }
+  
+        checkout_data=JSON.stringify(checkout_data);
+
+        let checkout_api='http//:localhost:4000/checkout';
+
+        let checkout_Response=await fetch(checkout_api,{
+          method:"POST",
+          body:checkout_data,
+          headers:{
+              "Content-Type":"application/json",
+          },
+      });
+    }      
+     else
+         alert("please enter all required details");
+    
+}
+
+
 </script>
