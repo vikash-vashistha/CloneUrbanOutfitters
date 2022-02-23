@@ -830,8 +830,31 @@
 
   var mainarr = JSON.parse(localStorage.getItem("mainsignup")) || [];
   var c = 0;
-  document.getElementById("creacc").addEventListener("click", function (event) {
+  document.getElementById("creacc").addEventListener("click", async function (event) {
     event.preventDefault();
+    console.log("hey");
+    try {
+      let data = {
+        email: document.getElementById("signup_mail").value,
+        password: document.getElementById("sineup_pass").value,
+      }
+
+      data = JSON.stringify(data);
+
+      let response = await fetch(`http://localhost:5500/register`, {
+        method: "POST",
+        body: data,
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+
+      let data1 = await response.json();
+      console.log(data1);
+    } catch (error) {
+      console.log(error);
+    }
+
     let mainarr = JSON.parse(localStorage.getItem("mainsignup")) || [];
     let emails = document.getElementById("signup_mail").value;
     let passcode = document.getElementById("sineup_pass").value;
@@ -880,8 +903,31 @@
   })
   var d = 0;
   var checkarr = JSON.parse(localStorage.getItem("mainsignup")) || [];
-  document.getElementById("sign_inb").addEventListener("click", function (event) {
+  document.getElementById("sign_inb").addEventListener("click", async function (event) {
     event.preventDefault();
+console.log("signin")
+    try {
+      let data = {
+        email: document.getElementById("ent_e").value,
+        password: document.getElementById("sign_p").value,
+      }
+
+      data = JSON.stringify(data);
+
+      let response = await fetch(`http://localhost:5500/login`, {
+        method: "POST",
+        body: data,
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+
+      let data1 = await response.json();
+      console.log(data1);
+    } catch (error) {
+      console.log(error);
+    }
+
     let checkarr = JSON.parse(localStorage.getItem("mainsignup")) || [];
     console.log("yes", checkarr)
     let emailee = document.getElementById("ent_e").value;
