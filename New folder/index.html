@@ -894,7 +894,6 @@
     }
   })
   document.getElementById("sipok").addEventListener("click", function (event) {
-    console.log("naveen")
     event.preventDefault();
     document.getElementById("thirdp").style.display = "none"
     document.getElementById("pops").style.display = "none"
@@ -929,7 +928,6 @@ console.log("signin")
     }
 
     let checkarr = JSON.parse(localStorage.getItem("mainsignup")) || [];
-    console.log("yes", checkarr)
     let emailee = document.getElementById("ent_e").value;
     let pasee = document.getElementById("sign_p").value;
 
