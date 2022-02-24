@@ -737,6 +737,7 @@
   document.getElementById("myacc").addEventListener("click", function (event) {
     event.preventDefault()
     localStorage.setItem("token", null)
+    localStorage.setItem("id", null)
 
     localStorage.setItem("checkiacc", JSON.stringify(0))
     check_user()
@@ -925,9 +926,14 @@
       });
 
       let data1 = await response.json();
+      // storing id and token in to local storage
+      let data_id = data1.user._id;
+      console.log(data_id);
+      localStorage.setItem("id", JSON.stringify(data_id));
+
+
       let data_token = data1.token;
       console.log(data_token);
-      // storing token in to local storage
       localStorage.setItem("token", JSON.stringify(data_token));
     } catch (error) {
       console.log(error);
