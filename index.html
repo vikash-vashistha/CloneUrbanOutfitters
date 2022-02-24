@@ -13,11 +13,13 @@
   <script src="https://kit.fontawesome.com/05dfa6a87b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/sign.css">
+  <link rel="shortcut icon"  href="https://img.search.brave.com/aNSlvq_0L22JXvZF-X4H5gzLjBhs27qZHoYlp3apefo/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5p/MmRqRnQxWVRZal9j/Z1JObmFYQmpnSGFI/YSZwaWQ9QXBp" alt="logo">
 </head>
 
 <body>
 
   <div id="nav"></div>
+  
   <div id="body">
     <div>
       <img
@@ -114,6 +116,7 @@
 
   </div>
   <!-- First -->
+<div id="div_below_images">
   <div id="slider">
     <h3>Most Popular</h3>
     <hr>
@@ -201,6 +204,7 @@
 
     </div>
   </div>
+
   <div id="slider">
     <h3>Most Popular</h3>
     <hr>
@@ -404,7 +408,7 @@
 
     </div>
   </div>
-  </div>
+  
   <div id="oudivcontainer">
     <div id="oudiv1">
       <a href="#"><img
@@ -427,6 +431,7 @@
       <a href="#">See More</a>
     </div>
   </div>
+</div>
   <div id="footer"></div>
 
 
@@ -636,13 +641,15 @@
   import navbar from './components/navbar.js'
   import footer from './components/footer.js'
   let nav = document.getElementById("nav");
-
   nav.innerHTML = navbar()
+
   let cart = JSON.parse(localStorage.getItem("cart")) || []
-  document.querySelector(".fa-shopping-bag").innerHTML = cart.length;
+  document.querySelector(".fa-shopping-bag").textContent = cart.length;
+  console.log("sd",cart.length);
 
   let foot = document.getElementById("footer");
   foot.innerHTML = footer()
+  
   let searchbar = document.getElementById("search")
   searchbar.addEventListener("keypress", searchNews)
 

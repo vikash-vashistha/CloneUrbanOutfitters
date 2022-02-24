@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./styles/cart.css">
   <link rel="stylesheet" href="./styles/slider.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="shortcut icon"  href="https://img.search.brave.com/aNSlvq_0L22JXvZF-X4H5gzLjBhs27qZHoYlp3apefo/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5p/MmRqRnQxWVRZal9j/Z1JObmFYQmpnSGFI/YSZwaWQ9QXBp" alt="logo">
+
   <script src="https://kit.fontawesome.com/05dfa6a87b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -122,7 +124,7 @@
   nav.innerHTML = navbar()
 
   let cart = JSON.parse(localStorage.getItem("cart"))
-  document.querySelector(".fa-shopping-bag").innerHTML = cart.length;
+  document.querySelector(".fa-shopping-bag_count").innerHTML = cart.length;
 
   let foot = document.getElementById("footer");
   foot.innerHTML = footer()
@@ -135,7 +137,7 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script>
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  console.log(cart);
+  //console.log(cart);
   let main = document.getElementById("main");
   let total = 0;
   function display(cart) {

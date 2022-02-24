@@ -173,3 +173,53 @@
 #footerbottomdiv1a {
   font-weight: bold;
 }
+@media(min-width:100px) and (max-width:800px){
+  #footertopdivinner{
+    display: grid;
+  }
+  #footertopdivinner+p{
+    display: none;
+  }
+  #footertopdivinner2btn{
+    width: 200%;
+  }
+  #footertopdiv+hr{
+    margin-top: 10%;
+  }
+  
+  #footertopdivinner2inp{
+    width: 200%;
+    margin-left: 8px;
+  }
+  #footermiddlediv{
+    margin-top: 10%;
+  }
+  #icondiv{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #icondiv1inner{
+    width: 50%;
+  }
+  #icondiv2inner{
+    width: 150%;
+  }
+  #icondiv3{
+    width: 190px;
+    margin-left: 70px;
+    margin-top: 40px;
+    
+  }
+  #footerbottomdiv1{
+    margin-top: 80px;
+  }
+  #footerbottomdiv2{
+    margin-top: 80px;
+  }
+
+
+}
+
+/* footertopdivinner */
