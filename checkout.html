@@ -24,7 +24,7 @@
                 <label for="">/ Payment</label>
                 <label for="">/ Review</label>
             </div>
-            <form onsubmit="sendEmail(); reset(); return false">
+            <form onsubmit="sendEmail()">
             <div id="guestdiv">
                 <p>Check Out as a Guest</p>
                 <h6>Email Address:*</h6>
@@ -308,11 +308,11 @@
                 <div id="infodiv">
                     <div>
                         <p>city*</p>
-                        <input type="text">
+                        <input type="text" id="city">
                     </div>
                     <div>
                         <p>state*</p>
-                        <input type="text">
+                        <input type="text" id="state">
                     </div>
                 </div><br><br>
                 <h6>Zip Code*</h6>
@@ -320,7 +320,7 @@
                 <h6>Daytime Phone*</h6>
                 <input id="daytime" type="text" placeholder="Do not enter a country code">
             </div><br><br><br>
-            <!-- <input id="checkoutdetails" type="submit" placeholder="submit"> -->
+             <input id="checkoutdetails" type="submit" placeholder="submit">
 
         </div>
     </form>
@@ -350,7 +350,7 @@
                     <p>Total</p>
                     <p id="totalamount">$0.00</p>
                 </div>
-                <button id="btn" onclick="sendEmail()">Continue</button>
+                <button id="btn">Continue</button>
                 <hr>
                 <div>
                     <p>promocode</p>
@@ -389,26 +389,39 @@
 <script>
   
 async function sendEmail(){
-    if(firstname&&lastname&&location&&email){
+var  firstname=document.getElementById("firstname").value;
+var lastname=document.getElementById("lastname").value;
+var location=document.getElementById("locationinp").value;
+var email=document.getElementById("guestinp").value;
+var city=document.getElementById("city").value;
+var state=document.getElementById("state").value;
+var zipinp=document.getElementById("zipinp").value;
+      if(firstname&&lastname&&location&&email&&city&&state&&zipinp){
     checkout_data={
       firstname:document.getElementById("firstname").value,
       lastname:document.getElementById("lastname").value,
       location:document.getElementById("locationinp").value,
-      email:document.getElementById("guestinp").value
+      email:document.getElementById("guestinp").value,
+      city:document.getElementById("city").value,
+      state:document.getElementById("state").value,
+        zipinp:document.getElementById("zipinp").value
     }
-        checkout_data=JSON.stringify(checkout_data);
+    alert(`confirm your details firstname:${firstname}, lastname:${lastname}, location:${location}, email:${email}, city:${city}, state:${state}, zipinp:${zipinp}`)
+    console.log(checkout_data)
+    //     checkout_data=JSON.stringify(checkout_data);
 
-        let checkout_api='http//:localhost:4000/checkout';
+    //     let checkout_api='http//:localhost:4000/checkout';
 
-        let checkout_Response=await fetch(checkout_api,{
-          method:"POST",
-          body:checkout_data,
-          headers:{
-              "Content-Type":"application/json",
-          },
-      });
-    }      
+    //     let checkout_Response=await fetch(checkout_api,{
+    //       method:"POST",
+    //       body:checkout_data,
+    //       headers:{
+    //           "Content-Type":"application/json",
+    //       },
+    //   });
+     }      
      else
          alert("please enter all required details"); 
 }
+
 </script>
