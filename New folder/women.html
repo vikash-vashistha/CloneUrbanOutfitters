@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="./styles/women.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/sign.css">
 
 </head>
 <style>
-    #signindiv {
+    /* #signindiv {
         display: none;
-    }
+    } */
 </style>
 
 <body>
@@ -27,7 +28,201 @@
     <!-- <div id="offers"></div> -->
     <!-- navbar -->
     <div id="navbar"></div>
+<!--Sign in part-->
+<div id="sign_itup" style="width: 100%;">
+    <div id="popup">
+      <div id="sin_pop_div">
 
+        <form id="sigin" action="">
+
+          <div style="display: flex;justify-content: flex-end;">
+            <div id="clo_divf">+</div>
+          </div>
+          <div>
+            <h id="sign_t" style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;font-weight:400;">Sign In
+            </h>
+          </div>
+          <div>
+            <hr style="width: 102%;">
+          </div>
+          <div id="inform" style="font-size: 12px;color: red;font-family: Helvetica, Arial, sans-serif"></div>
+          <div style="display: flex;justify-content: flex-start;">
+            <p style="font-size: 12px;font-weight: bold;font-family: Helvetica, Arial, sans-serif;">Email*</p>
+          </div>
+          <div>
+            <input style="margin-left: 0px;width: 100%;height: 36px;" id="ent_e" type="email">
+          </div>
+          <div style="display: flex;justify-content: flex-start;margin-top: 20px;">
+            <p style="font-size: 12px;font-weight: bold;margin-bottom: 2px;font-family: Helvetica, Arial, sans-serif;">
+              Password*</p>
+          </div>
+          <div>
+            <input style="width: 100%;height: 36px;" id="sign_p" type="password">
+          </div>
+          <div style="display: flex;justify-content: flex-start;height: 60px;margin-top: 15px;" id="show_pf">
+            <img style="width: 19px; height: 18px;margin-top: 10px;"
+              src="https://cdn-icons-png.flaticon.com/512/71/71375.png" alt="icn">
+            <p
+              style="font-size: 12px;text-decoration: underline;margin-left: 5px;color: grey;font-family: Helvetica, Arial, sans-serif">
+              Show Password</p>
+          </div>
+          <div style="display: flex;justify-content: flex-start;height: 60px;margin-top: 15px;display: none;"
+            id="hide_pf">
+            <img style="width: 19px; height: 18px;margin-top: 10px;"
+              src="https://cdn-icons.flaticon.com/png/512/722/premium/722357.png?token=exp=1642611058~hmac=559d3bbf0d15364fbad4ed3ab3c39e16"
+              alt="icn">
+            <p
+              style="font-size: 12px;text-decoration: underline;margin-left: 5px;color: grey;font-family: Helvetica, Arial, sans-serif">
+              Hide Password</p>
+          </div>
+          <div>
+            <button
+              style="width: 102%;height: 36px;font-weight: bold;color: white;cursor: pointer;background-color: black;"
+              id="sign_inb">Sign In</button>
+          </div>
+          <div style="height: 40px;display: flex;align-items: center;justify-content: center;">
+            <p style="font-size: 12px;text-decoration: underline;color: grey;font-family: Helvetica, Arial, sans-serif">
+              Forget Your Password?</p>
+          </div>
+          <div>
+            <hr style="width: 102%;">
+          </div>
+          <div>
+            <p style="font-family: Helvetica, Arial, sans-serif">Sign up</p>
+          </div>
+          <div>
+            <p style="font-size: 12px;color: grey;font-family: Helvetica, Arial, sans-serif">Welcome! It's quick and
+              easy to set up an account.</p>
+          </div>
+          <div>
+            <button
+              style="width: 100%;height: 36px;background-color: white;cursor: pointer;font-weight: bold;font-size: 12px;font-family: Helvetica, Arial, sans-serif"
+              id="sign_upb">Create an Account</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="pops">
+      <div id="sup_pop_div">
+        <form action="" id="sigup">
+          <div style="display: flex;justify-content: flex-end;">
+            <div id="clo_divs">+</div>
+          </div>
+          <div style="height: 20px;">
+            <p style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;font-weight:400;margin-top: 0px;">Create
+              an Account</p>
+          </div>
+          <div>
+            <hr style="width: 100%;">
+          </div>
+          <div style="height: 27px;">
+            <p style="font-size: 12px;color: grey;font-family: Helvetica, Arial, sans-serif;margin-top: 0px;">Please
+              enter your email address and password to create an<br> account.</p>
+          </div>
+          <div>
+            <p style="font-family: Helvetica, Arial, sans-serif;color: red;font-size: 12px;" id="errf"></p>
+          </div>
+          <div style="display: flex;justify-content: flex-start;height: 20px;">
+            <p style="font-size: 12px;font-weight: bold;font-family: Helvetica, Arial, sans-serif;margin-top: 0px;">
+              Email*</p>
+          </div>
+          <div>
+            <input style="width: 100%;height: 36px;" id="signup_mail" type="email"
+              pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+          </div>
+          <div style="height: 15px;">
+            <p></p>
+          </div>
+          <div style="display: flex;justify-content: flex-start;height: 30px;">
+            <p style="font-size: 12px;font-weight: bold;font-family: Helvetica, Arial, sans-serif;">Password*</p>
+          </div>
+
+          <div>
+            <input style="height: 36px;width: 100%;" type="password" id="sineup_pass">
+          </div>
+          <div style="height: 17px;">
+            <p></p>
+          </div>
+          <div style="display: flex;justify-content: flex-start;height: 22px;" id="show_ps">
+            <img style="width: 19px; height: 18px;margin-top: 0px;"
+              src="https://cdn-icons-png.flaticon.com/512/71/71375.png" alt="icn">
+            <p
+              style="font-size: 12px;text-decoration: underline;margin-left: 5px;margin-top: 2px;color: grey;font-family: Helvetica, Arial, sans-serif">
+              Show Password</p>
+          </div>
+          <div style="display: flex;justify-content: flex-start;height: 22px;display: none;" id="hide_ps">
+            <img style="width: 19px; height: 18px;margin-top: 0px;"
+              src="https://cdn-icons.flaticon.com/png/512/722/premium/722357.png?token=exp=1642611058~hmac=559d3bbf0d15364fbad4ed3ab3c39e16"
+              alt="icn">
+            <p
+              style="font-size: 12px;text-decoration: underline;margin-left: 5px;margin-top: 2px;color: grey;font-family: Helvetica, Arial, sans-serif">
+              Hide Password</p>
+          </div>
+          <div style="display: flex;justify-content: flex-start;">
+            <p style="font-size: 12px;font-weight: bold;font-family: Helvetica, Arial, sans-serif;">style Preference*
+            </p>
+          </div>
+          <div>
+            <select style="font-family: Helvetica, Arial, sans-serif;width: 100%;height: 36px;" name="" id="Select_it">
+              <option value="noth">I'd rather not say</option>
+              <option value="men">Men's</option>
+              <option value="wom">Women's</option>
+            </select>
+          </div>
+          <div>
+            <div style="display: flex; justify-content: flex-start;text-align: left;">
+              <input style="margin-top: 12px;background-color: grey;color: honeydew;" type="checkbox" name="" id="cond">
+              <p style="font-size: 12px;color: grey;font-family: Helvetica, Arial, sans-serif">Sign up for email to
+                receive rewards, exclusive discounts, early access to sale, VIP status and much more!</p>
+            </div>
+          </div>
+
+          <div style="text-align: left">
+            <p style="font-size: 12px;color: grey;font-family: Helvetica, Arial, sans-serif">By creating an account, you
+              agree to Urban Outfitters terms of use and privacy policy.
+            </p>
+          </div>
+          <div>
+            <button
+              style="font-family: Helvetica, Arial, sans-serif;width: 100%;cursor: pointer;height: 36px;background-color: black;color: white;font-weight: bold;"
+              id="creacc">Create an Account</button>
+          </div>
+          <div style="height: 20px;">
+            <hr style="margin-top:15px ;width: 100%;">
+          </div>
+          <div>
+            <p style="font-family: Helvetica, Arial, sans-serif;">Already Have an Account?</p>
+          </div>
+          <div>
+            <button
+              style="font-family: Helvetica, Arial, sans-serif;cursor: pointer;width: 100%;height: 36px;font-weight: bold;background-color: white;"
+              id="sign_b">Sign In</button>
+          </div>
+          <div style="height: 40px;"></div>
+        </form>
+      </div>
+    </div>
+    <div id="thirdp">
+      <div id="thirdps">
+        <div style="display: flex;justify-content: center;align-content: center;margin-top: 30px">
+          <p style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;font-weight:400;">Create an Account</p>
+        </div>
+        <div>
+          <hr style="width: 100%;">
+        </div>
+        <div style="display: flex;justify-content: center;align-content: center;">
+          <p style="font-size: 12px;font-family: Helvetica, Arial, sans-serif;color: rgb(21, 109, 9);">You are now
+            logged in to your new account</p>
+        </div>
+        <div style="margin-top: 20px;">
+          <button
+            style="width: 100%;height: 36px;background-color: black;color: white;font-weight: bold;font-size: 12px;font-family:Helvetica, Arial, sans-serif;font-size: 20px;cursor: pointer;"
+            id="sipok">ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Sign in part-->
     <!-- products data body  -->
 
     <div id="main_productdata_body">
