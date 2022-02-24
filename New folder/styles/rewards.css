@@ -5,6 +5,8 @@
 #uorewards1image{
     width: 100%;
     height: 250px;
+    margin-top: 120px;
+ 
 }
 #uorewards1image:hover{
    opacity: 0.8;
