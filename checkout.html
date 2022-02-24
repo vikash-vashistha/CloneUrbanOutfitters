@@ -24,7 +24,7 @@
                 <label for="">/ Payment</label>
                 <label for="">/ Review</label>
             </div>
-            <form onsubmit="sendEmail()">
+            <!-- <form> -->
             <div id="guestdiv">
                 <p>Check Out as a Guest</p>
                 <h6>Email Address:*</h6>
@@ -320,10 +320,11 @@
                 <h6>Daytime Phone*</h6>
                 <input id="daytime" type="text" placeholder="Do not enter a country code">
             </div><br><br><br>
-             <input id="checkoutdetails" type="submit" placeholder="submit">
+             <button onclick="sendEmail()">submit</button>
+            <!-- <input submit type="submit" placeholder="submit"> -->
 
         </div>
-    </form>
+    <!-- </form> -->
         <div id="checkoutcontainerright">
             <div id="summary">
                 <p>Order Summary</p>
@@ -379,7 +380,8 @@
 
 
     document.getElementById("btn").addEventListener('click', function () {
-        alert("congratulations your order is placed")
+        // alert("congratulations your order is placed")
+        payment();
     })
 
     document.getElementById("numberofitems").addEventListener("click", function () {
@@ -387,8 +389,9 @@
     })
 </script>
 <script>
-  
-async function sendEmail(){
+  var x=false;
+async function sendEmail(e){
+    // e.preventDefault()
 var  firstname=document.getElementById("firstname").value;
 var lastname=document.getElementById("lastname").value;
 var location=document.getElementById("locationinp").value;
@@ -406,8 +409,9 @@ var zipinp=document.getElementById("zipinp").value;
       state:document.getElementById("state").value,
         zipinp:document.getElementById("zipinp").value
     }
-    alert(`confirm your details firstname:${firstname}, lastname:${lastname}, location:${location}, email:${email}, city:${city}, state:${state}, zipinp:${zipinp}`)
+    x=confirm(`please confirm your details \n firstname:${firstname} \n lastname:${lastname} \n location:${location}\n email:${email}\n city:${city}\n state:${state}\n zipinp:${zipinp}`)
     console.log(checkout_data)
+    
     //     checkout_data=JSON.stringify(checkout_data);
 
     //     let checkout_api='http//:localhost:4000/checkout';
@@ -423,5 +427,10 @@ var zipinp=document.getElementById("zipinp").value;
      else
          alert("please enter all required details"); 
 }
-
+function payment(){
+    if(x)
+    alert("congratulations your oder is placed")
+    else
+    alert("please enter all  required details and confirm")
+}
 </script>
