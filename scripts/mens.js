@@ -214,7 +214,7 @@ function appenddata(data) {
     d1.addEventListener("click", () => {
       // console.log("go to cart")
       strore_to_local(ele);
-      location.reload();
+      // location.reload();
 
       // window.location.href = "./"                                                        //change the location and show the all details of that product
     });
@@ -289,6 +289,8 @@ appenddata(data);
 /////////////////////////////////store data of into the local storage ///////////////////////////////
 
 let arr_local = JSON.parse(localStorage.getItem("cart")) || [];
+let id = JSON.parse(localStorage.getItem("id")) || null;
+// let token = JSON.parse(localStorage.getItem("token")) || null;
 function strore_to_local({
   img1,
   img2,
@@ -308,10 +310,12 @@ function strore_to_local({
     size,
     color,
     brand,
+    user_id: `${id}`,
   };
-
+   addtocart(item_obj);
+  
   async function addtocart(item_obj) {
-    console.log("hey");
+    console.log(typeof(id));
     try {
       let data = item_obj;
 
@@ -331,7 +335,7 @@ function strore_to_local({
       console.log(error);
     }
   }
-addtocart(item_obj) 
+ 
   // console.log(img1,img2,name,price,discount,size,color,brand);
 
   arr_local.push(item_obj);
