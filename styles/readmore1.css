@@ -2,7 +2,7 @@
     width: 1150px;
     height: 430px;
     margin: 10px;
-    margin-left: 60px;
+    margin-left: 200px;
 }
 
 .commentbox {
@@ -20,6 +20,7 @@
     font-weight: 500;
     font-family: Georgia, 'Times New Roman', Times, serif;
     word-spacing: 4px;
+    padding-left: 165px;
 }
 
 .ques {
@@ -31,10 +32,17 @@
 
 <!--IMAGEBOX-->
 
+.image-long{
+    /* intentionally left blank */
+}
+
 .img5Box {
     width: 1200px;
     height: 300px;
     display: flex;
+    padding-left: 200px;
+    
+    
 }
 
 .img5box {
@@ -46,7 +54,7 @@
 .img3Box {
     width: 1160px;
     height: 500px;
-    margin-left: 40px;
+    margin-left: 200px;
     display: flex;
 }
 
@@ -80,7 +88,7 @@
 }
 
 .button {
-    margin-left: 550px;
+    margin-left: 700px;
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-small;

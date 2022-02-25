@@ -1,6 +1,7 @@
 .commentbox {
     width: 830px;
     margin-left: 250px;
+    padding-left: 200px;
   } 
 
      .para_text {
@@ -19,7 +20,7 @@
       width: 1150px;
       height: 430px;
       margin: 10px;
-      margin-left: 60px;
+      margin-left: 250px;
   }
 
     .ques {
@@ -31,11 +32,15 @@
 
   <!--IMAGEBOX-->
 
+  .mage-container {
+    /* intentionally left blank */
+  }
 
   .img5Box {
     width: 1200px;
     height: 300px;
     display: flex;
+    padding-left: 200px;
    }
 
   .img5box {
@@ -81,9 +86,18 @@
   }
 
   .button {
-      margin-left: 550px;
+    margin-left: 750px;
       background-color: white;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: x-small;
       padding: 5px;
+      
+  }
+
+  h1 {
+    padding-left: 200px;
+  }
+
+  .image-container2 {
+    padding-left: 200px;
   }

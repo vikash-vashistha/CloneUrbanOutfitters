@@ -1,3 +1,4 @@
+
 .Box2img {
     width: 1150px;
     height: 500px;
@@ -7,6 +8,7 @@
 .box2img {
     width: 550px;
     height: 500px;
+    
 }
 
 .box2Img {
@@ -16,7 +18,8 @@
 
 .commentbox {
    width: 780px;
-   margin-left: 250px;
+   margin-left: 450px;
+   padding-left: 150px;
 }
 
 .para_text {
@@ -32,7 +35,7 @@
 .big_img{
     width: 1200px;
     height: 600px;
-    margin-left: 30px;
+    margin-left: 150px;
 }
 
 #que {
@@ -51,6 +54,7 @@ font-size: 16px;
 width: 1200px;
 height: 300px;
 display: flex;
+padding-left: 150px;
 }
 
 .img5box {
@@ -64,12 +68,13 @@ margin: 9px;
   font-weight: 500;
   font-family: Georgia, 'Times New Roman', Times, serif;
   word-spacing: 4px;
+  padding-left: 150px;
 }
 
 .img3Box {
   width: 1160px;
   height: 500px;
-  margin-left: 40px;
+  margin-left: 170px;
   display: flex;
 }
 
