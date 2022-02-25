@@ -214,6 +214,9 @@ p {
   color: rgb(245, 245, 234);
 }
 
+
+
+
 /*----------------resopnisveness min-400 & max- 800------------*/
 @media (min-width:400px) and (max-width:800px) {
   #body {

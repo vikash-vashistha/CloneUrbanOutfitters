@@ -341,9 +341,11 @@ function navbar() {
                    <a href="">Most Liked</a>
                    <br>
                    <a href="">Furniture Collections</a>
+                   
                </div> 
                
                <div class="col_4">
+               
                   <a href=""> <img src="https://images.ctfassets.net/q602vtcuu3w3/5Qy3wY1JVYLRaHpUF3FIno/b8ba78ff3e6d71e85c6cad43d7409549/22_FEB_WEEK3_SUPERNAV_NM5.jpg?w=339&q=80&fm=webp"/> </a>
                </div>
            </div>
@@ -351,8 +353,10 @@ function navbar() {
 
 </div>
   <div class="navbar_container">
-    <div > <input id="search" placeholder="search"/><img class="fa-shopping-bag" src="https://img.search.brave.com/HrtfjZLprK8ZsDXi0GYryK1Xjabo2fhVM4U1rKoMdCc/rs:fit:300:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5o/U0UxaUdFZVluaS1X/THdRdnRKeDR3QUFB/QSZwaWQ9QXBp" /><span class="fa-shopping-bag"></span></div>
-  </div>
+  
+    <div > <input id="search" placeholder="search"/><img class="fa-shopping-bag" src="https://img.search.brave.com/hcoVyosTjG8MNSoWPf-LRAyIbVV8MHy6POX7JW3wz2E/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC51/VkhUeHg5SnFtdHZs/NGdBOG56cDhBSGFI/YSZwaWQ9QXBp"/></div>
+  
+    </div>
 
 </div>
 
