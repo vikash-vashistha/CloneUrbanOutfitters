@@ -1,209 +1,56 @@
-let All_data = {
-  mens: [
-    {
-      img1: " https://images.urbndata.com/is/image/UrbanOutfitters/64816432_001_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/64816432_001_d?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Standard Cloth Faux Leather Car Coat",
-      price: "89.00",
-      discount: "23% off",
-      size: "M",
-      color: "Black",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/64987415_001_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/64987415_001_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Standard Cloth Mod Satin MA-2 Flight Jacket",
-      price: "129.00",
-      discount: "23% off",
-      size: "M",
-      color: "Black",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/65022527_001_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/65022527_001_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Standard Cloth Technical Cargo Carpenter Pant",
-      price: "69.00",
-      discount: "23% off",
-      size: "M",
-      color: "Black",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/62624929_010_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/62624929_010_f?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "BDG Ribbed Inset Tee",
-      price: "39.00",
-      discount: "23% off",
-      size: "M",
-      color: "White",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/65021172_030_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/65021172_030_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Knee Work Pant",
-      price: "79.00",
-      discount: "23% off",
-      size: "M",
-      color: "Green",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/61776951_083_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/61776951_083_g?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "New Balance 327 Sneaker",
-      price: "100.00",
-      discount: "23% off",
-      size: "M",
-      color: "Orange",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/55648349_014_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/55648349_014_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Standard Cloth Oliver 5 Nylon Short",
-      price: "35.00",
-      discount: "23% off",
-      size: "M",
-      color: "White",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/65921470_020_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/65921470_020_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Standard Cloth Refine Button-Up Polo Sweater",
-      price: "59.00",
-      discount: "23% off",
-      size: "M",
-      color: "Brown",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/58731894_040_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/58731894_040_d?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "adidas 3-Stripe CLX Short",
-      price: "35.00",
-      discount: "23% off",
-      size: "M",
-      color: "black",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/59976969_006_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/59976969_006_d?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "'47 New York Yankees Classic Baseball Hat",
-      price: "29.00",
-      discount: "23% off",
-      size: "M",
-      color: "Grey",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/61526943_060_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/61526943_060_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Levis Skate Varsity Jacket",
-      price: "129.00",
-      discount: "23% off",
-      size: "M",
-      color: "Red",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/66181173_020_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/66181173_020_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Utopia Paneled Crew Neck Sweatshirt",
-      price: "69.00",
-      discount: "23% off",
-      size: "M",
-      color: "Brown",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/63628028_001_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/63628028_001_d?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Mac Miller Albums Pocket Tee",
-      price: "36.00",
-      discount: "23% off",
-      size: "M",
-      color: "Black",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/66209511_030_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/66209511_030_f?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Polo Ralph Lauren Bear Hoodie Sweater",
-      price: "328.00",
-      discount: "23% off",
-      size: "M",
-      color: "Green",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/64308596_006_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/64308596_006_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Reebok LT Court Sneaker",
-      price: "100.00",
-      discount: "23% off",
-      size: "M",
-      color: "White",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/64791379_004_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/64791379_004_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Standard Cloth French Terry Cardigan",
-      price: "34.00",
-      discount: "23% off",
-      size: "M",
-      color: "Grey",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/64859051_049_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/64859051_049_f?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "The Ragged Priest Nebular Puffer Jacket",
-      price: "140.00",
-      discount: "23% off",
-      size: "M",
-      color: "Blue",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/62202189_001_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/62202189_001_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "Alpha Industries MA-1 Quilted Flight Jacket",
-      price: "200.00",
-      discount: "23% off",
-      size: "M",
-      color: "Black",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/64544315_032_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/64544315_032_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "UO Quilted Pattern Shirt Jacket",
-      price: "99.00",
-      discount: "23% off",
-      size: "M",
-      color: "Green",
-      brand: "adidas",
-    },
-    {
-      img1: "https://images.urbndata.com/is/image/UrbanOutfitters/67277483_001_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      img2: "https://images.urbndata.com/is/image/UrbanOutfitters/67277483_001_e?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      name: "True Religion Metallic Logo Jogger Pant",
-      price: "99.00",
-      discount: "23% off",
-      size: "M",
-      color: "Black",
-      brand: "adidas",
-    },
-  ],
-};
+ //------------------------------------------------------------------------------//---------------------------------------------------------------------------//
+        // let count = document.getElementById("first_number_").innerHTML
+        let count = 1
+        console.log(count)
+        url = `https://urban-out-fitters-backend.herokuapp.com/mens?page=1&size=12`
+        function next_page(){
+            
+             count = Number(count)+1;
+            document.getElementById("product__img_name_price").innerHTML = null
+            document.getElementById("first_number_").innerHTML  = count
+            console.log(count+1)
+            url = `https://urban-out-fitters-backend.herokuapp.com/mens?page=${count}&size=12`
+            getUser()
+        }
+      
+        function previous_Page(){
 
-let data = All_data.mens; ////// taking data from all_data with key women
+             count = Number(count)-1;
+            document.getElementById("product__img_name_price").innerHTML = null
+            document.getElementById("first_number_").innerHTML  = count
+            // x = 2;
+            console.log(count+2)
+            url = `https://urban-out-fitters-backend.herokuapp.com/mens?page=${count}&size=12`
+            getUser()
+        }
+      
+        //-----------------fetching database----------------------//
+        
+
+        async function getUser() {
+        
+        try {
+        
+            let res = await fetch(url);            // get data from server by this line 
+            var data = await res.json();
+           
+            //  let user = data.data            // collect data by this line (we use await for collect data )
+            console.log("data:", data);
+            // let women = data[0].women;
+            // console.log("women:", women)
+            appenddata(data)
+        }
+        
+        catch (err) {
+            console.log("this error get by spell mistake:", err)
+        
+        }
+        }
+        getUser()
+
+
+//---------------------------//----------------------------------------//
+
 
 function appenddata(data) {
   data.map(function (ele, index) {
@@ -284,7 +131,7 @@ function appenddata(data) {
   };
   ///////////////////////////////////////////////////////////////////////////////////////////////
 }
-appenddata(data);
+// appenddata(data);
 
 /////////////////////////////////store data of into the local storage ///////////////////////////////
 
@@ -351,89 +198,154 @@ function strore_to_local({
 
 ///            by size filter
 
-document.getElementById("bysize_").addEventListener("change", () => {
-  let filter_items = data.filter(function (ele) {
-    var val = document.getElementById("bysize_").value;
-    if (val == "size") {
-      return ele.size;
-    }
-    return ele.size == val;
-  });
-  document.getElementById("product__img_name_price").innerHTML = null;
-  // console.log(filter_items);
-  appenddata(filter_items);
-});
+document.getElementById("bysize_").addEventListener("change", async()=>{
+   
+  url = `https://urban-out-fitters-backend.herokuapp.com/mens`
+
+  try {
+          
+      let res = await fetch(url);            // get data from server by this line 
+      var data = await res.json();
+    
+      let filter_items = data.filter(function(ele){
+          var val = document.getElementById("bysize_").value;
+          if(val=="size"){
+              return ele.size
+          }
+          return ele.size ==val;
+      })
+      document.getElementById("product__img_name_price").innerHTML=null;
+      // console.log(filter_items);
+      appenddata(filter_items)
+  }
+  catch (err) {
+      console.log("this error get by spell mistake:", err)
+      
+  }
+  
+})
 
 /////         by color filter
+document.getElementById("bycolor_").addEventListener("change", async()=>{
+  url = `https://urban-out-fitters-backend.herokuapp.com/mens`
 
-document.getElementById("bycolor_").addEventListener("change", () => {
-  let filter_items = data.filter(function (ele) {
-    var val = document.getElementById("bycolor_").value;
-    return ele.color == val;
-  });
-  document.getElementById("product__img_name_price").innerHTML = null;
-  // console.log(filter_items);
-  appenddata(filter_items);
-});
+  try {
+          
+      let res = await fetch(url);            // get data from server by this line 
+      var data = await res.json();
 
+      let filter_items = data.filter(function(ele){
+          var val = document.getElementById("bycolor_").value;
+          return ele.color ==val;
+      })
+      document.getElementById("product__img_name_price").innerHTML=null;
+      // console.log(filter_items);
+      appenddata(filter_items)
+      
+  } catch (err) {
+      
+      console.log("this error get by spell mistake:", err)
+     }
+
+})
 /////    by brand filter
 
-document.getElementById("bybrand_").addEventListener("change", () => {
-  let filter_items = data.filter(function (ele) {
-    var val = document.getElementById("bybrand_").value;
-    return ele.brand == val;
-  });
-  document.getElementById("product__img_name_price").innerHTML = null;
-  // console.log(filter_items);
-  appenddata(filter_items);
-});
+document.getElementById("bybrand_").addEventListener("change", async()=>{
+       
+  try {
+          
+      let res = await fetch(url);            // get data from server by this line 
+      var data = await res.json();
+
+      let filter_items = data.filter(function(ele){
+          var val = document.getElementById("bybrand_").value;
+          return ele.brand ==val;
+      })
+      document.getElementById("product__img_name_price").innerHTML=null;
+      // console.log(filter_items);
+      appenddata(filter_items)
+  } catch (err) {
+      console.log("this error get by spell mistake:", err)
+  }
+})
 
 ///////    by price filter
 
-document.getElementById("byprice_").addEventListener("change", () => {
-  let filter_items = data.filter(function (ele) {
-    let val = document.getElementById("byprice_").value;
-    if (val == 25) {
-      return Number(ele.price) <= val;
-    } else if (val == 50) {
-      return Number(ele.price) <= val && Number(ele.price) >= 25;
-    } else if (val == 100) {
-      return Number(ele.price) <= val && Number(ele.price) >= 50;
-    } else if (val == 200) {
-      return Number(ele.price) <= val && Number(ele.price) >= 100;
-    } else if (val == 500) {
-      return Number(ele.price) <= val && Number(ele.price) >= 200;
-    } else if (val == "more") {
-      return Number(ele.price) >= 500;
-    }
-  });
-  document.getElementById("product__img_name_price").innerHTML = null;
-  // console.log(filter_items);
-  appenddata(filter_items);
-});
+document.getElementById("byprice_").addEventListener("change", async()=>{
+  url = `https://urban-out-fitters-backend.herokuapp.com/mens`
+
+  try {
+          
+      let res = await fetch(url);            // get data from server by this line 
+      var data = await res.json();
+      let filter_items = data.filter(function(ele){
+          let val = document.getElementById("byprice_").value;
+          if(val==25){
+              return  Number(ele.price)<=val;
+          }
+          else if(val==50){
+              return Number(ele.price)<=val && Number(ele.price)>=25;;
+          }
+          else if(val==100){
+              return Number(ele.price)<=val && Number(ele.price)>=50;;
+          }
+          else if(val==200){
+              return Number(ele.price)<=val && Number(ele.price)>=100;;
+          }
+          else if(val==500){
+              return Number(ele.price)<=val && Number(ele.price)>=200;;
+          }
+          else if(val=="more") {
+             return Number(ele.price)>=500;
+          }
+      })
+      document.getElementById("product__img_name_price").innerHTML=null;
+      // console.log(filter_items);
+      appenddata(filter_items)
+      
+  } catch (err) {
+      console.log("this error get by spell mistake:", err)
+  }
+
+})
 
 ///// ther is no function for free pickup ////
 
 //////////////////////////////////   sort function here            /////////////////////////////////
 
-document.getElementById("by_sort_").addEventListener("change", () => {
-  let sort_items = data.sort(function (a, b) {
-    let val = document.getElementById("by_sort_").value;
+document.getElementById("by_sort_").addEventListener("change",async()=>{
+  url = `https://urban-out-fitters-backend.herokuapp.com/mens`
 
-    if (val == "lowtohigh") {
-      return Number(a.price) - Number(b.price);
-    } else if (val == "hightolow") {
-      return Number(b.price) - Number(a.price);
-    } else if (val == "az") {
-      if (a.name < b.name) return -1;
-      return 0;
-    } else if (val == "za") {
-      if (a.name > b.name) return -1;
-      return 0;
-    }
-  });
+  try {
+          
+      let res = await fetch(url);            // get data from server by this line 
+      var data = await res.json();
+  
+      
+      let sort_items = data.sort(function(a,b){
+           let val = document.getElementById("by_sort_").value;
 
-  document.getElementById("product__img_name_price").innerHTML = null;
-  // console.log(sort_items);
-  appenddata(sort_items);
-});
+           if(val=="lowtohigh"){
+               return Number(a.price) - Number(b.price);
+           }
+           else if(val == "hightolow"){
+               return Number(b.price) - Number(a.price);
+           }
+           else if(val=="az"){
+              if (a.name < b.name) return -1;
+              return 0;
+           }
+           else if(val=="za"){
+              if (a.name > b.name) return -1;
+              return 0;
+           }
+
+      })
+
+      document.getElementById("product__img_name_price").innerHTML=null;
+      // console.log(sort_items);
+      appenddata(sort_items)
+  } catch (err) {
+      console.log("this error get by spell mistake:", err)
+  }
+})
