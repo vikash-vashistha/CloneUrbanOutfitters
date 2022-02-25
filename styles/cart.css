@@ -3,6 +3,10 @@ div {
   font-family: sans-serif;
 }
 
+#signindiv {
+  display: none;
+}
+
 #main {
   cursor: pointer;
   margin: auto;
