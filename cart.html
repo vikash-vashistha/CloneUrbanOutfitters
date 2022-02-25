@@ -198,7 +198,7 @@
   async function getProduct() {
 
     try {
-      let response = await fetch(`http://localhost:5500/bag/${id}`);
+      let response = await fetch(`https://urban-out-fitters-backend.herokuapp.com/bag/${id}`);
 
       let data = await response.json();
       console.log(data);

@@ -844,7 +844,7 @@
 
       data = JSON.stringify(data);
 
-      let response = await fetch(`http://localhost:5500/register`, {
+      let response = await fetch(`https://urban-out-fitters-backend.herokuapp.com/register`, {
         method: "POST",
         body: data,
         headers: {
@@ -917,7 +917,7 @@
 
       data = JSON.stringify(data);
 
-      let response = await fetch(`http://localhost:5500/login`, {
+      let response = await fetch(`https://urban-out-fitters-backend.herokuapp.com/login`, {
         method: "POST",
         body: data,
         headers: {

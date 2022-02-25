@@ -321,13 +321,16 @@ function strore_to_local({
 
       data = JSON.stringify(data);
 
-      let response = await fetch(`http://localhost:5500/bag`, {
-        method: "POST",
-        body: data,
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      let response = await fetch(
+        `https://urban-out-fitters-backend.herokuapp.com/bag`,
+        {
+          method: "POST",
+          body: data,
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       let data1 = await response.json();
       console.log(data1);
