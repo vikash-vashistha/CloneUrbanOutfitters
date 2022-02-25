@@ -168,13 +168,27 @@
      color: cadetblue;
  }
 
+ #goTop {
+    display: none; 
+    background-color: white; 
+    color: black; 
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px; 
+    right: 1400px; 
+    z-index: 99; 
+    padding: 10px; 
+    border-radius: 30px;
+    font-size: 18px; 
+    border: 1px solid black;
+  }
 
 
- /* sort section  */
 
 
 
- /*--------------------resolution 400 to 800px --------------------------*/
+
+ /*--------------------media query 400 to 800px --------------------------*/
 @media (min-width:400px) and (max-width:800px){
     .dropdown_hover{
         display: none;

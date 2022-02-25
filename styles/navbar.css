@@ -44,13 +44,16 @@ body {
 #search {
   height: 20px;
   margin-left: 130px;
-  width: 40%;
+  width: 70%;
+  position: relative;
+  bottom: 20px;
 }
 .fa-shopping-bag{
   height: 39px;
-  position: relative;
-  top: 5px;
-  left: 5px;
+  position:relative;
+  left: 370px;
+  bottom: 42px;
+  
 }
 
 /*-----------------------------------navbar css--------------------------------------------*/
@@ -67,6 +70,7 @@ body {
 }
 .nav-bar img{
   width: 20%;
+  margin-left: 80px;
 }
 .navbar_container{
  
@@ -110,6 +114,9 @@ a{
 .dropdown_hover{
   margin-left: 80px;
   cursor: pointer;
+  position: relative;
+  bottom: 18px;
+  font-size: small;
 }
 a:hover{
   color: rgb(131, 128, 128);
@@ -159,6 +166,7 @@ a:hover{
 }
 .nav-bar img{
   width: 100%;
+  margin-left: 20px;
 }
 .navbar_container{
   display: grid;

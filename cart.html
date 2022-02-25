@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/cart.css">
   <link rel="stylesheet" href="./styles/slider.css">
+  <script src="https://kit.fontawesome.com/05dfa6a87b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="shortcut icon"  href="https://img.search.brave.com/aNSlvq_0L22JXvZF-X4H5gzLjBhs27qZHoYlp3apefo/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5p/MmRqRnQxWVRZal9j/Z1JObmFYQmpnSGFI/YSZwaWQ9QXBp" alt="logo">
 
-  <script src="https://kit.fontawesome.com/05dfa6a87b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -111,29 +111,13 @@
 
     </div>
   </div>
+<button onclick="topFunc()" id="goTop"><i class="fa-solid fa-arrow-up"></button>
+
   <div id="footer"></div>
 </body>
 
 </html>
-<script type="module">
 
-  import navbar from './components/navbar.js'
-  import footer from './components/footer.js'
-  let nav = document.getElementById("navbar");
-
-  nav.innerHTML = navbar()
-
-  let cart = JSON.parse(localStorage.getItem("cart"))
-  document.querySelector(".fa-shopping-bag_count").innerHTML = cart.length;
-
-  let foot = document.getElementById("footer");
-  foot.innerHTML = footer();
-  console.log(foot)
-
-  document.getElementById("back").addEventListener("click", function () {
-    window.location.href = "index.html"
-  })
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script>
@@ -209,4 +193,53 @@
     window.location.href = "checkout.html"
   })
 
+
+
+</script>
+
+<script>
+  let topButton = document.getElementById("goTop");
+  
+window.onscroll = function(){
+
+scrollFunction();
+
+}
+
+function scrollFunction(){
+
+if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+  topButton.style.display = "block";
+}else{
+  topButton.style.display = "none";
+}
+
+}
+
+  function topFunc(){
+    document.documentElement.scrollTop = 0;
+
+  }
+
+</script>
+
+
+
+<script type="module">
+
+  import navbar from './components/navbar.js'
+  import footer from './components/footer.js'
+  let nav = document.getElementById("navbar");
+
+  nav.innerHTML = navbar()
+
+  // let cart = JSON.parse(localStorage.getItem("cart"))
+
+
+  let foot = document.getElementById("footer");
+  foot.innerHTML = footer()
+
+  document.getElementById("back").addEventListener("click", function () {
+    window.location.href = "index.html"
+  })
 </script>

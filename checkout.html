@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="styles/checkout.css">
     <link rel="shortcut icon"  href="https://img.search.brave.com/aNSlvq_0L22JXvZF-X4H5gzLjBhs27qZHoYlp3apefo/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5p/MmRqRnQxWVRZal9j/Z1JObmFYQmpnSGFI/YSZwaWQ9QXBp" alt="logo">
-
-    <script src="https://kit.fontawesome.com/3347d6e76d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/05dfa6a87b.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
     <div id="checkoutnavbar">
-        <h1>URBAN OUTFITTERS</h1>
+        <a href="./index.html"><img src="https://images.ctfassets.net/q602vtcuu3w3/VIkNXXPT6dOReNqgpe9Bw/79807fdce1a7cabab877a047ea229c53/UOLogo-XL_L_M.svg"/></a>
+
         <a href="#"><i class="fas fa-shopping-bag"></i><label id="numberofitems">0</label></a>
     </div>
     <div id="checkoutcontainer">
@@ -357,6 +357,7 @@
             </div>
         </div>
     </div>
+    <button onclick="topFunction()" id="goTop">Top</button>    
     <div id="footer"></div>
 </body>
 
@@ -380,4 +381,26 @@
     document.getElementById("numberofitems").addEventListener("click", function () {
         window.location.href = "cart.html"
     })
+
+</script>
+
+<script>
+    let topBtn = document.getElementById("goTop");
+
+window.onscroll = () => {
+    scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
 </script>

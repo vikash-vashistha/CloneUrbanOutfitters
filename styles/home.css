@@ -80,7 +80,9 @@
   color: gray;
 }
 
-
+.fa-shopping-bag{
+  cursor: pointer;
+}
 
 /* product_count_sort section css */
 #number_of_products_{

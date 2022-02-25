@@ -88,6 +88,7 @@ div {
   height: 50px;
   background-color: black;
   color: whitesmoke;
+  cursor: pointer;
 }
 
 hr {
@@ -109,9 +110,36 @@ hr {
  height: 10px
 }
 
+#slider div{
+  height: 350px;
+}
+#slider img{
+  height: 300px;
+  width: 120%;
+ 
+}
+
+#goTop {
+  display: none; 
+  background-color: white; 
+  color: black; 
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px; 
+  right: 1400px; 
+  z-index: 99; 
+  padding: 10px; 
+  border-radius: 30px;
+  font-size: 18px; 
+  border: 1px solid black;
+}
+
+
+
+
+/*--------------min-width:400px and max-width:800px----------------*/
 
 @media (min-width:400px) and (max-width:800px){
-
   #body{
     display: grid;
   }
@@ -148,12 +176,21 @@ hr {
   height: 450px;
   font-size: 20px;
 }
+#slider div{
+  height: 350px;
+}
+#slider img{
+  height: 200px;
+}
+#summary #continue{
+  cursor: pointer;
+}
 
 
 
 }
 
-/*--------------minwidth:100px and max-width:400px*/
+/*-------------- minwidth:100px and max-width:400px*/
 
 
 @media (min-width:100px) and (max-width:400px){
@@ -191,12 +228,29 @@ hr {
 }
 
 #summary{
+  position: relative;
+  left: 10px;
   width: 90%;
   height: 350px;
   font-size: 15px;
 }
+#slider div{
+  height: 350px;
+}
+#slider img{
+  height: 200px;
+  width: 120%;
+ 
+}
+
+#continue{
+  cursor: pointer;
+}
 
 
 
 }
+
+
+
 

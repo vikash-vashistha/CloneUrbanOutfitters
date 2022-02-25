@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/women.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <script src="https://kit.fontawesome.com/05dfa6a87b.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon"  href="https://img.search.brave.com/aNSlvq_0L22JXvZF-X4H5gzLjBhs27qZHoYlp3apefo/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5p/MmRqRnQxWVRZal9j/Z1JObmFYQmpnSGFI/YSZwaWQ9QXBp" alt="logo">
 
 
@@ -171,7 +172,7 @@
         </div>
 
     </div>
-
+<button onclick="topFunc()" id="goTop"><i class="fa-solid fa-arrow-up"></i></button>
 
     <div id="footer"></div>
 
@@ -226,4 +227,26 @@
 
 
 </script>
-<script src="./scripts/women.js"></script>
+<script src="./scripts/women.js">
+    
+</script>
+
+<script>
+    let topButton = document.getElementById("goTop");
+
+window.onscroll = function(){
+    scrollFunc()
+}
+
+function scrollFunc(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        topButton.style.display = "block";
+    }else{
+        topButton.style.display = "none";
+    }
+}
+
+function topFunc(){
+    document.documentElement.scrollTop = 0;
+}
+</script>
