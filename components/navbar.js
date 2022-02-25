@@ -354,7 +354,7 @@ function navbar() {
 </div>
   <div class="navbar_container">
   
-    <div > <input id="search" placeholder="search"/><img class="fa-shopping-bag" src="https://img.search.brave.com/hcoVyosTjG8MNSoWPf-LRAyIbVV8MHy6POX7JW3wz2E/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC51/VkhUeHg5SnFtdHZs/NGdBOG56cDhBSGFI/YSZwaWQ9QXBp"/></div>
+    <div > <input id="search" placeholder="search"/><i class="fas fa-shopping-bag"></i></div>
   
     </div>
 
