@@ -16,6 +16,8 @@ div {
 }
 
 #main > div {
+  /* border: 1px solid black; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin-top: 20px;
   display: flex;
   height: 130px;
@@ -24,7 +26,7 @@ div {
 
 #main img {
   height: 100%;
-  width: 30%;
+  width: 20%;
 }
 
 #main > div > div {
@@ -69,9 +71,11 @@ div {
 }
 
 #summary {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin-top: 120px;
+  padding: 10px;
   width: 25%;
-  height: 350px;
+  height: 250px;
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -86,6 +90,7 @@ div {
 }
 
 #summary > button {
+  border-radius: 5px;
   margin: auto;
   margin-top: 20px;
   width: 90%;
@@ -107,4 +112,7 @@ hr {
 
 button {
   margin-top: 50px;
+  border-radius: 5px;
+  border: transparent;
+  background-color: white;
 }

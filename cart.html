@@ -19,7 +19,23 @@
   <div id="navbar"></div>
   <div id="body">
     <div id="main"></div>
-    <div id="summary"></div>
+    <div id="summary">
+      <p>
+        <a>Subtotal</a>
+        <a class="sum"></a>
+      </p>
+      <p>Shipping TBD</p>
+      <p>
+        <a>Estimated Tax
+        </a>
+        <a>$0.0</a>
+      </p>
+      <p><b>Total</b> <b class="sum"></b></p>
+      <button id="continue">Continue</button>
+      <hr>
+      <p id="promo">promo code</p>
+    </div>
+  </div>
   </div>
   <div id="slider">
     <h3>For You</h3>
@@ -180,10 +196,10 @@
       let color = document.createElement("p");
       color.textContent = `color → ⟬${elem.color}⟭`;
       let price = document.createElement("p");
-      price.textContent = `price → ⟬${elem.price}⟭`
+      price.textContent = `price → ⟬$${elem.price}⟭`
 
       let total_p = document.createElement("p");
-      total_p.textContent = `brand ${elem.price}`
+      total_p.textContent = `price $${elem.price}`
 
       let remove = document.createElement("button");
       remove.textContent = "remove";
@@ -208,21 +224,26 @@
       // console.log(main);
     });
 
-    document.getElementById("summary").innerHTML = ` <p>
-          <a>Subtotal</a>
-          <a>$${total}</a>
-        </p>
-        <p>Shipping TBD</p>
-        <p>
-          <a>Estimated Tax
-          </a>
-          <a>$${0.0}</a>
-        </p>
-        <p><b>Total</b> <b>$${total}</b></p>
-        <button id="continue">Continue</button>
-        <hr>
-        <p id="promo">promo code</p>
-      </div>`;
+    let sum = document.querySelectorAll(".sum")
+    for (let i = 0; i < sum.length; i++) {
+      sum[i].textContent = `$${total}`;
+
+    }
+    // document.getElementById("summary").innerHTML = ` <p>
+    //       <a>Subtotal</a>
+    //       <a>$${total}</a>
+    //     </p>
+    //     <p>Shipping TBD</p>
+    //     <p>
+    //       <a>Estimated Tax
+    //       </a>
+    //       <a>$${0.0}</a>
+    //     </p>
+    //     <p><b>Total</b> <b>$${total}</b></p>
+    //     <button id="continue">Continue</button>
+    //     <hr>
+    //     <p id="promo">promo code</p>
+    //   </div>`;
     localStorage.setItem("total", JSON.stringify(total));
   }
   // display(cart);
@@ -275,8 +296,13 @@
     // location.reload()
   }
 
-  // document.getElementById("continue").addEventListener("click", function () {
-  //   window.location.href = "checkout.html"
-  // })
+
+
+  let move = document.getElementById("continue");
+  move.addEventListener("click", function () {
+    console.log(move);
+    window.location.href = "checkout.html"
+  })
+
 
 </script>
