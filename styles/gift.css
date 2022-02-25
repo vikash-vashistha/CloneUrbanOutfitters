@@ -1,88 +1,86 @@
-*{
-    font-family: Helvetica, Arial, sans-serif;
-    padding: 0px;
-    margin: 0px;
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
-#E-Giftcard-container{
-    width: 90%;
-    /* border: 1px solid black; */
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 15px;
+#E-Giftcard-container {
+  /* margin-top: 150px; */
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 15px;
 }
-#spring>img{
-    width: 100%;
-    height: 240px;
-    margin-bottom: 20px;
+#spring > img {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 20px;
 }
-#checkdiv{
-    height: 120px;
-    width: 90%;
-    margin: auto;
-    margin-top: -20px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    align-items: center;
+#checkdiv {
+  height: 120px;
+  width: 90%;
+  margin: auto;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
 }
-#checkdiv>a>img{
-    height: 63%;
-    width: 100%;
-
+#checkdiv > a > img {
+  height: 63%;
+  width: 100%;
 }
-#uogiftcard{
-    width: 90%;
-    /* border: 1px solid black; */
+#uogiftcard {
+  width: 90%;
+  /* border: 1px solid black; */
 }
-#uogiftcard{
-    width: 90%;
-    /* border: 1px solid brown; */
-    margin: auto;
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
+#uogiftcard {
+  width: 90%;
+  /* border: 1px solid brown; */
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
 }
-  #uogiftcard>div{ 
-    /* border: 1px solid black; */
-    width: 230px;
-    height: 240px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#uogiftcard > div {
+  /* border: 1px solid black; */
+  width: 230px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#uogiftcarddiv1img2{
-    width: 120%;
-    height: 240px;
-    position: fixed;
-    position: relative;
+#uogiftcarddiv1img2 {
+  width: 120%;
+  height: 240px;
+  position: fixed;
+  position: relative;
 }
-#uogiftcarddiv1img1{
-    width: 100%;
-    height: 240px;
+#uogiftcarddiv1img1 {
+  width: 100%;
+  height: 240px;
 }
-#uogiftcarddiv1img2{
-    width: 101%;
-    height: 240px;
-     margin-left: -230px; 
-     
+#uogiftcarddiv1img2 {
+  width: 101%;
+  height: 240px;
+  margin-left: -230px;
 }
-#uogiftcarddiv1img1:hover{
-    opacity: 1;
+#uogiftcarddiv1img1:hover {
+  opacity: 1;
 }
-#uogiftcarddiv1img2:hover{
-    opacity: 0;
+#uogiftcarddiv1img2:hover {
+  opacity: 0;
 }
-#giftflexdiv{
-    display: flex;
-    gap: 180px;
-    margin-top: -20px;
-    width: 90%;
-    margin: auto;
-    margin-top: -25px;
-    margin-bottom: 30px;
+#giftflexdiv {
+  display: flex;
+  gap: 180px;
+  margin-top: -20px;
+  width: 90%;
+  margin: auto;
+  margin-top: -25px;
+  margin-bottom: 30px;
 }
-#giftflexdiv>p{
-    font-size: 13px;
+#giftflexdiv > p {
+  font-size: 13px;
 }
-
