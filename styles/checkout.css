@@ -145,11 +145,15 @@
   height: 40px;
 }
 #checkoutcontainerright {
-  margin-top: 100px;
-  height: 200px;
-  position: fixed;
-  margin-left: 65%;
+
+  height: 220px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 116px;
+  bottom: 0;
   width: 20%;
+  margin-bottom: 40px;
+  
 }
 #summary {
   display: flex;
@@ -191,7 +195,3 @@
   margin-left: 7%;
   margin-bottom: 5%;
 }
-
-/* alert{
-  background-color: greenyellow;
-} */
