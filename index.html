@@ -830,7 +830,6 @@
 
   })
 
-
   var mainarr = JSON.parse(localStorage.getItem("mainsignup")) || [];
   var c = 0;
   document.getElementById("creacc").addEventListener("click", async function (event) {
@@ -854,6 +853,14 @@
 
       let data1 = await response.json();
       console.log(data1);
+      let data_id = data1.user._id;
+      console.log(data_id);
+      localStorage.setItem("id", JSON.stringify(data_id));
+
+
+      let data_token = data1.token;
+      console.log(data_token);
+      localStorage.setItem("token", JSON.stringify(data_token));
     } catch (error) {
       console.log(error);
     }
