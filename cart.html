@@ -141,7 +141,8 @@
   let main = document.getElementById("main");
   let total = 0;
   function display(cart) {
-    // main.innerHTML = null;
+    total = 0;
+    main.innerHTML = null;
     cart.map(function (elem, index) {
       console.log(elem, index);
       let div = document.createElement("div");
@@ -171,18 +172,18 @@
       let div1 = document.createElement("div");
       let div2 = document.createElement("div");
       let name = document.createElement("p");
-      name.textContent = `brand ${elem.name}`;
+      name.textContent = `name → ⟬${elem.name}⟭`;
       let size = document.createElement("p");
-      size.textContent = `brand ${elem.size}`;
+      size.textContent = `size → ⟬${elem.size}⟭`;
       let brand = document.createElement("p");
-      brand.textContent = `brand ${elem.brand}`
+      brand.textContent = `brand → ⟬${elem.brand}⟭`
       let color = document.createElement("p");
-      color.textContent = `brand ${elem.color}`;
+      color.textContent = `color → ⟬${elem.color}⟭`;
       let price = document.createElement("p");
-      price.textContent = `brand ${elem.price}`
+      price.textContent = `price → ⟬${elem.price}⟭`
 
-      let total = document.createElement("p");
-      total.textContent = `brand ${elem.price}`
+      let total_p = document.createElement("p");
+      total_p.textContent = `brand ${elem.price}`
 
       let remove = document.createElement("button");
       remove.textContent = "remove";
@@ -194,11 +195,11 @@
       //   <option value="4">4</option>
       //   <option value="5">5</option>
       // </select>
-      div2.append(total, remove);
+      div2.append(total_p, remove);
       div.append(img, div1, div2);
 
       total += Number(elem.price)
-
+      console.log(total);
       remove.addEventListener("click", function () {
         console.log(elem, index);
         remove_cart(elem, index);
@@ -243,9 +244,11 @@
 
 
   function remove_cart(elem, index) {
-    console.log(elem, index);
+    // console.log(elem, index);
     let remove_id = elem._id;
-     async function deleteProduct() {
+    console.log(remove_id);
+    deleteProduct()
+    async function deleteProduct() {
 
       try {
 
@@ -258,15 +261,15 @@
         })
 
         let data1 = await response.json();
-        console.log(data1);
-        display(data1)
+        getProduct()
       } catch (err) {
         console.log(err);
       }
 
     }
+    // console.log(data1);
     // cart.splice(index, 1);
-    // total -= Number(elem.price);
+    total -= Number(elem.price);
     // localStorage.setItem("cart", JSON.stringify(cart));
     // console.log(index);
     // location.reload()
