@@ -736,6 +736,9 @@
   check_user()
   document.getElementById("myacc").addEventListener("click", function (event) {
     event.preventDefault()
+    localStorage.setItem("token", null)
+    localStorage.setItem("id", null)
+
     localStorage.setItem("checkiacc", JSON.stringify(0))
     check_user()
   })
@@ -894,6 +897,7 @@
     }
   })
   document.getElementById("sipok").addEventListener("click", function (event) {
+    console.log("naveen")
     event.preventDefault();
     document.getElementById("thirdp").style.display = "none"
     document.getElementById("pops").style.display = "none"
@@ -904,7 +908,7 @@
   var checkarr = JSON.parse(localStorage.getItem("mainsignup")) || [];
   document.getElementById("sign_inb").addEventListener("click", async function (event) {
     event.preventDefault();
-console.log("signin")
+    console.log("signin")
     try {
       let data = {
         email: document.getElementById("ent_e").value,
@@ -918,16 +922,25 @@ console.log("signin")
         body: data,
         headers: {
           "Content-Type": "application/json"
-        }
+        },
       });
 
       let data1 = await response.json();
-      console.log(data1);
+      // storing id and token in to local storage
+      let data_id = data1.user._id;
+      console.log(data_id);
+      localStorage.setItem("id", JSON.stringify(data_id));
+
+
+      let data_token = data1.token;
+      console.log(data_token);
+      localStorage.setItem("token", JSON.stringify(data_token));
     } catch (error) {
       console.log(error);
     }
 
     let checkarr = JSON.parse(localStorage.getItem("mainsignup")) || [];
+    console.log("yes", checkarr)
     let emailee = document.getElementById("ent_e").value;
     let pasee = document.getElementById("sign_p").value;
 
@@ -961,7 +974,6 @@ console.log("signin")
       }
     }
   })
-  ///////////////////////////////////// signin /////////////////////////
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
