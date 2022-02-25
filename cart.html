@@ -141,41 +141,72 @@
   let main = document.getElementById("main");
   let total = 0;
   function display(cart) {
-    main.innerHTML = null;
+    // main.innerHTML = null;
     cart.map(function (elem, index) {
-      // console.log(elem, index);
+      console.log(elem, index);
       let div = document.createElement("div");
-      div.innerHTML = ` <img
-        src=${elem.img1}
-        alt="">
-      <div>
-        <p id="name">${elem.name}</p>
-        <p id="size"><b>size </b >${elem.size}</p>
-        <p id="name"><b>brand </b >${elem.brand}</p>
-        <p id="size"><b>color </b >${elem.color}</p>
-      </div>
-      <p id="price"><b>Price </b >$${elem.price}</p>
-      <select name="" id="quantity">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-      <div>
-        <p id="total"><b>Total </b >$${elem.price}</p>
-        <p id="remove">Remove</p>
-      </div>`
+      // div.innerHTML = ` <img
+      //   src=${elem.img1}
+      //   alt="">
+      // <div>
+      //   <p id="name">${elem.name}</p>
+      //   <p id="size"><b>size </b >${elem.size}</p>
+      //   <p id="name"><b>brand </b >${elem.brand}</p>
+      //   <p id="size"><b>color </b >${elem.color}</p>
+      // </div>
+      // <p id="price"><b>Price </b >$${elem.price}</p>
+      // <select name="" id="quantity">
+      //   <option value="1">1</option>
+      //   <option value="2">2</option>
+      //   <option value="3">3</option>
+      //   <option value="4">4</option>
+      //   <option value="5">5</option>
+      // </select>
+      // <div>
+      //   <p id="total"><b>Total </b >$${elem.price}</p>
+      //   <p id="remove">Remove</p>
+      // </div>`
+      let img = document.createElement("img");
+      img.src = elem.img1;
+      let div1 = document.createElement("div");
+      let div2 = document.createElement("div");
+      let name = document.createElement("p");
+      name.textContent = `brand ${elem.name}`;
+      let size = document.createElement("p");
+      size.textContent = `brand ${elem.size}`;
+      let brand = document.createElement("p");
+      brand.textContent = `brand ${elem.brand}`
+      let color = document.createElement("p");
+      color.textContent = `brand ${elem.color}`;
+      let price = document.createElement("p");
+      price.textContent = `brand ${elem.price}`
+
+      let total = document.createElement("p");
+      total.textContent = `brand ${elem.price}`
+
+      let remove = document.createElement("button");
+      remove.textContent = "remove";
+      div1.append(name, size, brand, color);
+      // <select name="" id="quantity">
+      //   <option value="1">1</option>
+      //   <option value="2">2</option>
+      //   <option value="3">3</option>
+      //   <option value="4">4</option>
+      //   <option value="5">5</option>
+      // </select>
+      div2.append(total, remove);
+      div.append(img, div1, div2);
+
       total += Number(elem.price)
 
-      // var del = document.querySelector("#remove");
-      div.addEventListener("click", function () {
+      remove.addEventListener("click", function () {
         console.log(elem, index);
         remove_cart(elem, index);
       })
       main.append(div)
       // console.log(main);
-    })
+    });
+
     document.getElementById("summary").innerHTML = ` <p>
           <a>Subtotal</a>
           <a>$${total}</a>
@@ -211,17 +242,38 @@
   getProduct()
 
 
-  // function remove_cart(elem, index) {
-  //   cart.splice(index, 1);
-  //   total -= Number(elem.price);
-  //   localStorage.setItem("cart", JSON.stringify(cart));
-  //   display(data)
-  //   console.log(index);
-  //   location.reload()
-  // }
+  function remove_cart(elem, index) {
+    console.log(elem, index);
+    let remove_id = elem._id;
+     async function deleteProduct() {
 
-  document.getElementById("continue").addEventListener("click", function () {
-    window.location.href = "checkout.html"
-  })
+      try {
+
+        let response = await fetch(`https://urban-out-fitters-backend.herokuapp.com/bag/${remove_id}`, {
+
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json"
+          }
+        })
+
+        let data1 = await response.json();
+        console.log(data1);
+        display(data1)
+      } catch (err) {
+        console.log(err);
+      }
+
+    }
+    // cart.splice(index, 1);
+    // total -= Number(elem.price);
+    // localStorage.setItem("cart", JSON.stringify(cart));
+    // console.log(index);
+    // location.reload()
+  }
+
+  // document.getElementById("continue").addEventListener("click", function () {
+  //   window.location.href = "checkout.html"
+  // })
 
 </script>
