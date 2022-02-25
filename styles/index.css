@@ -248,42 +248,39 @@ p {
   #div_below_images{
     margin-top: 450%;
   }
-
-
-
-
-
-
-
-
-
   
 }
 
+/*----------------resopnisveness min-100 & max-400------------*/
 
-/* .dropdown_hover{
-  position: relative;
-  display: inline-block;
-}
+@media (min-width:100px) and (max-width:400px) {
+  #body {
+    
+    width: auto;
+    /* height: 200px; */
+    margin-top: 200px;
+    grid-template-areas:
+    "a a a a a a a a a a a a"
+    "b b b b b b b b b b b b"
+    "c c c c c c c c c c c c"
+    "d d d d d d d d d d d d"
+    "e e e e e e e e e e e e"
+    "f f f f f f f f f f f f"
+    "g g g g g g g g g g g g"
+    "h h h h h h h h h h h h"
+    "i i i i i i i i i i i i"
+    ;
+  }
+  #body img{
+    height: 80%;
+  }
+  #oudiv2{
+    width: auto;
+  }
 
-.dropdown_content{
-  margin-left: 10px;
-  min-width: 350px;
-  line-height: 30px;
-  display: none;
-  background-color: whitesmoke;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
- position: absolute;
- font-weight: bold;
- padding: 5px;
-
+  
+  #div_below_images{
+    margin-top: 450%;
+  }
+  
 }
-.dropdown_hover:hover .dropdown_content{
-  display: inline-block;
-}
-.row{
-  display: grid;
-   grid-template-columns: auto  auto;
-   grid-gap: 20px;
-} */

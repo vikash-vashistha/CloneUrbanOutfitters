@@ -354,7 +354,7 @@ function navbar() {
 </div>
   <div class="navbar_container">
   
-    <div > <input id="search" placeholder="search"/><i class="fas fa-shopping-bag"></i></div>
+    <div id="search_bagicons"> <input id="search" placeholder="search"/><i class="fas fa-shopping-bag"></i></div>
   
     </div>
 

@@ -49,7 +49,8 @@ body {
 .fa-shopping-bag{
   height: 39px;
   position: relative;
-  top: 10px;
+  top: 5px;
+  left: 5px;
 }
 
 /*-----------------------------------navbar css--------------------------------------------*/
@@ -113,16 +114,66 @@ a{
 a:hover{
   color: rgb(131, 128, 128);
 }
+
+/*-----------------min-width:400 and max-width:800----------*/
 @media (min-width:400px) and (max-width:800px) {
   .nav-bar{
     position: relative;
   }
   #title{
     position: relative;
+
   }
+
+#body{
+  margin-top: 10px;
+}
+#search{
+  position: relative;
+  top:25px;
+}
+.fa-shopping-bag{
+  position: relative;
   
+  margin-right: 150px;
+}
 }
 
 
+@media (min-width:100px) and (max-width:400px) {
+  .nav-bar{
+    position: relative;
+  }
+  #title{
+    position: relative;
 
+  }
+  
 
+#body{
+  margin-top: 10px;
+}
+  
+#div_below_images{
+  margin-top: 1000px;
+}
+.nav-bar img{
+  width: 100%;
+}
+.navbar_container{
+  display: grid;
+  margin-left: 20px;
+  font-size: small;
+
+}
+.nav-bar #search{
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 60%;
+}
+.fa-shopping-bag{
+  position: relative;
+  margin-right: 200%;
+}
+
+}
