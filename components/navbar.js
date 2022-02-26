@@ -352,3 +352,371 @@ function navbar() {
 }
 
 export default navbar;
+
+//---------------------new navbar--------------------------------------------------//
+// function navbar() {
+//   return `<div id="title">
+//     <div id="rewards">
+//       <i class="fas fa-star-of-david"></i>
+//       UO Rewards
+//     </div>
+//     <div id="gift">
+//       <i class="fas fa-credit-card"></i>
+//       Gift Cards
+//     </div>
+
+
+
+//     <div id="signindiv">
+//     <div id="signb">
+//     <i class="far fa-user-circle"></i>
+//     Sign In</div>
+// </div>
+// <div id="myaccdiv">
+//     <div id="myacc">Click here to <b>Sign Out</b></div>
+// </div>
+// </div>
+
+
+
+
+//   </div>
+
+//   <div class="nav-bar">
+//     <a href="./index.html"><img src="https://images.ctfassets.net/q602vtcuu3w3/VIkNXXPT6dOReNqgpe9Bw/79807fdce1a7cabab877a047ea229c53/UOLogo-XL_L_M.svg"/></a>
+//   <div class="navbar_container">
+//       <div class="dropdown_hover">
+//         Women's
+//       </div>
+//         <div class="dropdown_content">
+            
+//             <div class="row">
+//                 <div class="col_1">
+//                 <h4 href="">Shop by Category</h4>
+//                     <a href="./women.html">Shop All Women's</a>
+//                     <br>
+//                     <a href="">New</a>
+//                     <br>
+//                     <a href="">Dresses</a>
+//                     <br>
+//                     <a href="">Rompers + Jumpsuits</a>
+//                     <br>
+//                     <a href="">Tops</a>
+//                     <br>
+//                     <a href="">Coats + Jackets</a>
+//                     <br>
+//                     <a href="">Jeans</a>
+//                     <br>
+//                     <a href="">Bottoms</a>
+//                 </div>
+//                 <div class="col_2">
+//                     <a href="">Activewear</a>
+//                     <br>
+//                     <a href="">Intimates + Longue</a>
+//                     <br>
+//                     <a href="">Swim</a>
+//                     <br>
+//                     <a href="">Vintage</a>
+//                     <br>
+//                     <a href="">Shoes</a>
+//                     <br>
+//                     <a href="">Accessories</a>
+//                     <br>
+//                     <a href="">Beauty</a>
+//                     <br>
+//                     <a href="">Sale</a>
+//                 </div>
+//                 <div class="col_3">
+//                     <h4>Featured</h4>
+//                     <a href="">The Cord Shop</a>
+//                     <br>
+//                     <a href="">The Corgo Shop</a>
+//                     <br>
+//                     <a href="">The Sun Shop</a>
+//                     <br>
+//                     <a href="">Our West</a>
+//                     <br>
+//                     <a href="">2000's Nostalgia</a>
+//                     <br>
+//                     <a href="">Selling Fast</a>
+//                 </div> 
+//                 <div class="col_4">
+//                     <h4>Brands</h4>
+//                     <a href="">Miaou</a>
+//                     <br>
+//                     <a href="">BDG</a>
+//                     <br>
+//                     <a href="">Adam selman Sport</a>
+//                     <br>
+//                     <a href="">Juicy Couture</a>
+//                     <br>
+//                     <a href="">The North Face</a>
+//                     <br>
+//                     <a href="">Out From Under</a>
+//                     <br>
+//                   <a href="">The Ragged Priest</a>
+//                 </div>
+//                 <div class="col_5">
+//                   <a href=""> <img src="https://img.search.brave.com/MnjwicXxHoAt780KJRGCMuYtamb2K0NpF6EwSVwz8Ac/rs:fit:316:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5X/Ni14MFlTZjhIcXFk/VnkwNkdWNC1RSGFM/SCZwaWQ9QXBp"/> </a>
+//                 </div>
+//             </div>
+//         </div>
+//   </div>
+//   <div class="navbar_container">
+//         <div class="dropdown_hover">
+//         Men's
+//        </div>
+//        <div class="dropdown_content">
+           
+//            <div class="row">
+//                <div class="col_1">
+//                <h4 href="">Shop by Category</h4>
+//                    <a href="./mens.html">Shop All Men's</a>
+//                    <br>
+//                    <a href="">New</a>
+//                    <br>
+//                    <a href="">Graphic Tees</a>
+//                    <br>
+//                    <a href="">Tops</a>
+//                    <br>
+//                    <a href="">Coats + Jackets</a>
+//                    <br>
+//                    <a href="">Jeans</a>
+//                    <br>
+//                    <a href="">Bottoms</a>
+//                </div>
+//                <div class="col_2">
+//                    <a href="">Activewear</a>
+//                    <br>
+//                    <a href="">Shoes</a>
+//                    <br>
+//                    <a href="">Underwear + Longue</a>
+//                    <br>
+//                    <a href="">Grooming</a>
+//                    <br>
+//                    <a href="">Vintage</a>
+//                    <br>
+//                    <a href="">Accessories</a>
+//                    <br>
+//                    <a href="">Sale</a>
+//                </div>
+//                <div class="col_3">
+//                    <h4>Featured</h4>
+//                    <a href="">The Cord Shop</a>
+//                    <br>
+//                    <a href="">The Corgo Shop</a>
+//                    <br>
+//                    <a href="">The Sun Shop</a>
+//                    <br>
+//                    <a href="">Team Spirit Shop</a>
+//                    <br>
+//                    <a href="">Feel Good Shop</a>
+                   
+//                </div> 
+//                <div class="col_4">
+//                    <h4>Brands</h4>
+//                    <a href="">Adidas</a>
+//                    <br>
+//                    <a href="">BDG</a>
+//                    <br>
+//                    <a href="">Champion</a>
+//                    <br>
+//                    <a href="">Dickies</a>
+//                    <br>
+//                    <a href="">The North Face</a>
+//                    <br>
+//                    <a href="">OBEY</a>
+//                    <br>
+//                   <a href="">Polo Ralph Lauren</a>
+//                </div>
+//                <div class="col_5">
+//                   <a href=""> <img src="https://images.ctfassets.net/q602vtcuu3w3/5mZP24uLKA5NaTpvTnXZIy/b15aaf6b2aa5e9a487cca1525812c7ba/22_FEB_WEEK3_SUPERNAV_NM2.jpg?w=339&q=80&fm=webp"/> </a>
+//                </div>
+//            </div>
+//        </div>
+// </div>
+// <div class="navbar_container">
+//         <div class="dropdown_hover">
+//         Home
+//        </div>
+//        <div class="dropdown_content">
+           
+//            <div class="row">
+//                <div class="col_1">
+//                <h4 href="">Shop by Category</h4>
+//                    <a href="./home.html">Shop All Home</a>
+//                    <br>
+//                    <a href="">New</a>
+//                    <br>
+//                    <a href="">In Stock + Ready To Ship</a>
+//                    <br>
+//                    <a href="">Bedding</a>
+//                    <br>
+//                    <a href="">Furniture</a>
+//                    <br>
+//                    <a href="">Rugs</a>
+//                    <br>
+//                    <a href="">Home Decor</a>
+//                </div>
+//                <div class="col_2">
+//                    <a href="">Mirrors + Wall Art</a>
+//                    <br>
+//                    <a href="">Lighting</a>
+//                    <br>
+//                    <a href="">Kitchen + Bar</a>
+//                    <br>
+//                    <a href="">Bath</a>
+//                    <br>
+//                    <a href="">Vintage</a>
+//                    <br>
+//                    <a href="">Sale</a>
+//                </div>
+//                <div class="col_3">
+//                    <h4>Featured</h4>
+//                    <a href="">The Bedding Shop</a>
+//                    <br>
+//                    <a href="">The Checkboard Trend</a>
+//                    <br>
+//                    <a href="">What's Your Sign</a>
+//                    <br>
+//                    <a href="">For The Vanity</a>
+//                    <br>
+//                    <a href="">Most Liked</a>
+//                    <br>
+//                    <a href="">Furniture Collections</a>
+//                </div> 
+               
+//                <div class="col_4">
+//                   <a href=""> <img src="https://images.ctfassets.net/q602vtcuu3w3/6104RbLNvxtqrQmGOegFYo/c3ae61f2be138e4cd2b570d2630bf31c/22_FEB_WEEK3_SUPERNAV_NM3.jpg?w=339&q=80&fm=webp"/> </a>
+//                </div>
+//            </div>
+//        </div>
+// </div>
+// <div class="navbar_container">
+//         <div class="dropdown_hover">
+//         Lifestyle
+//        </div>
+//        <div class="dropdown_content">
+           
+//            <div class="row">
+//                <div class="col_1">
+//                <h4 href="">Shop by Category</h4>
+//                    <a href="./lifestyle.html">Shop All Lifestyle</a>
+//                    <br>
+//                    <a href="">New</a>
+//                    <br>
+//                    <a href="">Music</a>
+//                    <br>
+//                    <a href="">Electronics + Accessories</a>
+//                    <br>
+//                    <a href="">Books</a>
+//                    <br>
+//                    <a href="">Desk Supplies</a>
+                   
+//                </div>
+//                <div class="col_2">
+//                    <a href="">Fun + Games</a>
+//                    <br>
+//                    <a href="">Health + Wellness</a>
+//                    <br>
+//                    <a href="">Fitness + Outdoors</a>
+//                    <br>
+//                    <a href="">Smoke Shop</a>
+//                    <br>
+//                    <a href="">Pets</a>
+//                    <br>
+//                    <a href="">Sale</a>
+//                </div>
+//                <div class="col_3">
+//                    <h4>Featured</h4>
+//                    <a href="">The UO Photography Shop</a>
+//                    <br>
+//                    <a href="">The Music Shop</a>
+//                    <br>
+//                    <a href="">Indoor Garden Space</a>
+//                    <br>
+//                    <a href="">At Home Spa</a>
+//                    <br>
+//                    <a href="">Work Space</a>
+//                    <br>
+//                    <a href="">For Your Pleasure</a>
+//                </div> 
+               
+//                <div class="col_4">
+//                   <a href=""> <img src="https://images.ctfassets.net/q602vtcuu3w3/3ECkOjLGvBs90e6F4gJXTP/dc6f419899e6d9888d2a4bb0a4efa5b9/22_FEB_WEEK3_SUPERNAV_NM4.jpg?w=339&q=80&fm=webp"/> </a>
+//                </div>
+//            </div>
+//        </div>
+// </div>
+// <div class="navbar_container">
+//         <div class="dropdown_hover">
+//         Beauty
+//        </div>
+//        <div class="dropdown_content">
+           
+//            <div class="row">
+//                <div class="col_1">
+//                <h4 href="">Shop by Category</h4>
+//                    <a href="">Shop All Home</a>
+//                    <br>
+//                    <a href="">New</a>
+//                    <br>
+//                    <a href="">In Stock + Ready To Ship</a>
+//                    <br>
+//                    <a href="">Bedding</a>
+//                    <br>
+//                    <a href="">Furniture</a>
+//                    <br>
+//                    <a href="">Rugs</a>
+//                    <br>
+//                    <a href="">Home Decor</a>
+//                </div>
+//                <div class="col_2">
+//                    <a href="">Mirrors + Wall Art</a>
+//                    <br>
+//                    <a href="">Lighting</a>
+//                    <br>
+//                    <a href="">Kitchen + Bar</a>
+//                    <br>
+//                    <a href="">Bath</a>
+//                    <br>
+//                    <a href="">Vintage</a>
+//                    <br>
+//                    <a href="">Sale</a>
+//                </div>
+//                <div class="col_3">
+//                    <h4>Featured</h4>
+//                    <a href="">The Bedding Shop</a>
+//                    <br>
+//                    <a href="">The Checkboard Trend</a>
+//                    <br>
+//                    <a href="">What's Your Sign</a>
+//                    <br>
+//                    <a href="">For The Vanity</a>
+//                    <br>
+//                    <a href="">Most Liked</a>
+//                    <br>
+//                    <a href="">Furniture Collections</a>
+                   
+//                </div> 
+               
+//                <div class="col_4">
+               
+//                   <a href=""> <img src="https://images.ctfassets.net/q602vtcuu3w3/5Qy3wY1JVYLRaHpUF3FIno/b8ba78ff3e6d71e85c6cad43d7409549/22_FEB_WEEK3_SUPERNAV_NM5.jpg?w=339&q=80&fm=webp"/> </a>
+//                </div>
+//            </div>
+//        </div>
+
+// </div>
+//   <div class="navbar_container">
+  
+//     <div id="search_bagicons"> <input id="search" placeholder="search"/><i class="fas fa-shopping-bag"></i></div>
+  
+//     </div>
+
+// </div>
+
+// `;
+// }
+
+// export default navbar;

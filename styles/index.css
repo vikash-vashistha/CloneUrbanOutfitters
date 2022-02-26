@@ -23,6 +23,8 @@
     ". . . . . . . . i i i i";
 }
 
+
+
 #body > div {
   /* border: 1px solid red; */
   font-family: sans-serif;
@@ -30,10 +32,17 @@
   cursor: pointer;
 }
 
+@media (min-width:400px) and (max-width:800px) {
+  #body >div{
+    width: auto;
+  }
+}
+
 #body > div:nth-child(1) {
   margin-top: 100px;
   grid-area: a;
 }
+
 
 #body > div:nth-child(2) {
   grid-area: b;
@@ -204,4 +213,74 @@ p {
 }
 #oudivcontainerhr {
   color: rgb(245, 245, 234);
+}
+
+
+
+
+/*----------------resopnisveness min-400 & max- 800------------*/
+@media (min-width:400px) and (max-width:800px) {
+  #body {
+    
+    width: auto;
+    /* height: 200px; */
+    margin-top: 200px;
+    grid-template-areas:
+    "a a a a a a a a a a a a"
+    "b b b b b b b b b b b b"
+    "c c c c c c c c c c c c"
+    "d d d d d d d d d d d d"
+    "e e e e e e e e e e e e"
+    "f f f f f f f f f f f f"
+    "g g g g g g g g g g g g"
+    "h h h h h h h h h h h h"
+    "i i i i i i i i i i i i"
+    ;
+  }
+  #body img{
+    height: 80%;
+  }
+  #oudiv2{
+    width: auto;
+  }
+
+  
+  #div_below_images{
+    margin-top: 450%;
+  }
+  
+}
+
+/*----------------resopnisveness min-100 & max-400------------*/
+
+@media (min-width:100px) and (max-width:400px) {
+  #body {
+    
+    width: auto;
+    /* height: 200px; */
+    margin-top: 200px;
+    grid-template-areas:
+    "a a a a a a a a a a a a"
+    "b b b b b b b b b b b b"
+    "c c c c c c c c c c c c"
+    "d d d d d d d d d d d d"
+    "e e e e e e e e e e e e"
+    "f f f f f f f f f f f f"
+    "g g g g g g g g g g g g"
+    "h h h h h h h h h h h h"
+    "i i i i i i i i i i i i"
+    ;
+  }
+  #body img{
+    height: 80%;
+  }
+  #oudiv2{
+    width: auto;
+  }
+
+  
+  #div_below_images{
+    margin-top: 450%;
+  }
+  
 }

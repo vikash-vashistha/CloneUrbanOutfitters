@@ -3,10 +3,6 @@ div {
   font-family: sans-serif;
 }
 
-#signindiv {
-  display: none;
-}
-
 #main {
   cursor: pointer;
   margin: auto;
@@ -16,8 +12,6 @@ div {
 }
 
 #main > div {
-  /* border: 1px solid black; */
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin-top: 20px;
   display: flex;
   height: 130px;
@@ -26,7 +20,7 @@ div {
 
 #main img {
   height: 100%;
-  width: 20%;
+  width: 30%;
 }
 
 #main > div > div {
@@ -71,11 +65,9 @@ div {
 }
 
 #summary {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin-top: 120px;
-  padding: 10px;
   width: 25%;
-  height: 250px;
+  height: 350px;
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -90,13 +82,13 @@ div {
 }
 
 #summary > button {
-  border-radius: 5px;
   margin: auto;
   margin-top: 20px;
   width: 90%;
   height: 50px;
   background-color: black;
   color: whitesmoke;
+  cursor: pointer;
 }
 
 hr {
@@ -110,9 +102,155 @@ hr {
   margin-left: 15px;
 }
 
-button {
-  margin-top: 50px;
-  border-radius: 5px;
-  border: transparent;
-  background-color: white;
+.fa-shopping-bag{
+  cursor: pointer;
 }
+
+.flickity-viewport{
+ height: 10px
+}
+
+#slider div{
+  height: 350px;
+}
+#slider img{
+  height: 300px;
+  width: 120%;
+ 
+}
+
+#goTop {
+  display: none; 
+  background-color: white; 
+  color: black; 
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px; 
+  right: 1400px; 
+  z-index: 99; 
+  padding: 10px; 
+  border-radius: 30px;
+  font-size: 18px; 
+  border: 1px solid black;
+}
+
+
+
+
+/*--------------min-width:400px and max-width:800px----------------*/
+
+@media (min-width:400px) and (max-width:800px){
+  #body{
+    display: grid;
+  }
+  #main{
+    width: 100%;
+    cursor: pointer;
+  }
+
+  #main img {
+    height: 100%;
+    width: 30%;
+  }
+  #main > div {
+    margin-top: 20px;
+    display: flex;
+    height: 250px;
+    width: 90%;
+  }
+  #main #quantity{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  #total{
+    position: relative;
+    right: 10px;
+  }
+  #remove{
+  position: relative;
+  right: 10px;
+}
+#summary{
+  width: 100%;
+  height: 450px;
+  font-size: 20px;
+}
+#slider div{
+  height: 350px;
+}
+#slider img{
+  height: 200px;
+}
+#summary #continue{
+  cursor: pointer;
+}
+
+
+
+}
+
+/*-------------- minwidth:100px and max-width:400px*/
+
+
+@media (min-width:100px) and (max-width:400px){
+
+  #body{
+    display: grid;
+  }
+  #main{
+    width: 100%;
+    cursor: pointer;
+  }
+
+  #main img {
+    height: 100%;
+    width: 30%;
+  }
+  #main > div {
+    margin-top: 20px;
+    display: flex;
+    height: 200px;
+    width: 90%;
+  }
+  #main #quantity{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  #total{
+    position: relative;
+    right: 100px;
+  }
+#remove{
+  position: relative;
+  right: 100px;
+}
+
+#summary{
+  position: relative;
+  left: 10px;
+  width: 90%;
+  height: 350px;
+  font-size: 15px;
+}
+#slider div{
+  height: 350px;
+}
+#slider img{
+  height: 200px;
+  width: 120%;
+ 
+}
+
+#continue{
+  cursor: pointer;
+}
+
+
+
+}
+
+
+
+
