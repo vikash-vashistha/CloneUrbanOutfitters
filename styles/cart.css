@@ -186,7 +186,20 @@ hr {
   cursor: pointer;
 }
 
-
+#goTop {
+  display: none; 
+  background-color: white; 
+  color: black; 
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px; 
+  right: 1400px; 
+  z-index: 99; 
+  padding: 10px; 
+  border-radius: 30px;
+  font-size: 18px; 
+  border: 1px solid black;
+}
 
 }
 
@@ -246,7 +259,20 @@ hr {
 #continue{
   cursor: pointer;
 }
-
+#goTop {
+  display: none; 
+  background-color: white; 
+  color: black; 
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px; 
+  right: 1400px; 
+  z-index: 99; 
+  padding: 10px; 
+  border-radius: 30px;
+  font-size: 18px; 
+  border: 1px solid black;
+}
 
 
 }

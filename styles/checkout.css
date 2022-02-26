@@ -22,6 +22,10 @@
   text-decoration: none;
   color: white;
 }
+#checkoutnavbar a > img{
+  position: relative;
+  left: 80px;
+}
 #checkoutnavbar > a > label {
   color: white;
   margin-left: -14px;
