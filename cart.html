@@ -234,29 +234,39 @@
       sum[i].textContent = `$${total}`;
 
     }
-    // document.getElementById("summary").innerHTML = ` <p>
-    //       <a>Subtotal</a>
-    //       <a>$${total}</a>
-    //     </p>
-    //     <p>Shipping TBD</p>
-    //     <p>
-    //       <a>Estimated Tax
-    //       </a>
-    //       <a>$${0.0}</a>
-    //     </p>
-    //     <p><b>Total</b> <b>$${total}</b></p>
-    //     <button id="continue">Continue</button>
-    //     <hr>
-    //     <p id="promo">promo code</p>
-    //   </div>`;
     localStorage.setItem("total", JSON.stringify(total));
   }
-  // display(cart);
-  let id = JSON.parse(localStorage.getItem("id")) || null;
+
+  // let id = JSON.parse(localStorage.getItem("id")) || null;
+  // async function getProduct() {
+
+  //   try {
+  //     let response = await fetch(`https://urban-out-fitters-backend.herokuapp.com/bag/${id}`);
+
+  //     let data = await response.json();
+  //     console.log(data);
+  //     document.querySelector(".fa-shopping-bag").innerHTML = data.length;
+  //     display(data)
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // }
+  // getProduct()
+
+  let token = JSON.parse(localStorage.getItem("token")) || null;
   async function getProduct() {
 
     try {
-      let response = await fetch(`https://urban-out-fitters-backend.herokuapp.com/bag/${id}`);
+      let response = await fetch(`https://urban-out-fitters-backend.herokuapp.com/bag`, {
+      // let response = await fetch(`http://localhost:5500/bag`, {
+
+        method: "GET",
+        headers: {
+          "Access-Control-Allow-Headers": "Accept",
+          "Content-Type": "application/json",
+          'Authorization': `Bearer ${token}`
+        }
+      });
 
       let data = await response.json();
       console.log(data);
