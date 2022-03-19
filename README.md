@@ -2,11 +2,6 @@
 Urban Outfitters is a lifestyle related retailer which specializes in selling apparel, clothing accessories and apartment products. It primarily targets teens and young adults who are interested in hipster subculture and alternative fashion..
 <a href="https://ikea-clone2.vercel.app/" target="_blank">Click here for Live demo</a>
 
-## Team members:
-<p><b>1. Aakash Dwivedi</b></p>
-<p><b>2. Anil Kumar</b></p>
-<p><b>3. Bhaskar Kumar</b></p>
-<p><b>4. Vishal Chauhan</b></p>
 
 ## Tech Stack used:
 <ul>
