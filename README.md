@@ -1,6 +1,6 @@
 # CloneUrbanOutfitters
 Urban Outfitters is a lifestyle related retailer which specializes in selling apparel, clothing accessories and apartment products. It primarily targets teens and young adults who are interested in hipster subculture and alternative fashion..
-<a href="https://ikea-clone2.vercel.app/" target="_blank">Click here for Live demo</a>
+<a href="https://clone-urban-outfitters.vercel.app/" target="_blank">Click here for Live demo</a>
 
 
 ## Tech Stack used:
